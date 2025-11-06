@@ -1,1 +1,2043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotless Solutions | NYC Cleaning & Maid Service — Book Online</title>
+    <meta name="description" content="NYC's trusted cleaning service for homes & offices. Fast online booking, transparent quotes, and five-star pros.">
+    <meta name="theme-color" content="#1ba098">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Spotless Solutions | NYC Cleaning Service">
+    <meta property="og:description" content="Book your NYC cleaning appointment online. Trusted residential & office cleaning.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://spotlesssolutions.com">
+    
+    <!-- Schema.org LocalBusiness JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Spotless Solutions",
+        "url": "https://spotlesssolutions.com",
+        "email": "Spotless.solutions1105@gmail.com",
+        "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Crect width='1024' height='1024' fill='%23f5f9f8'/%3E%3Ccircle cx='512' cy='320' r='180' fill='%235bc0b8' opacity='0.6'/%3E%3Ccircle cx='512' cy='320' r='150' fill='%231ba098'/%3E%3Ccircle cx='400' cy='250' r='40' fill='%235bc0b8'/%3E%3Ccircle cx='350' cy='350' r='60' fill='%235bc0b8' opacity='0.7'/%3E%3Cpath d='M650,200 Q700,250 680,320 Q650,380 580,380 Q550,380 530,350' fill='none' stroke='white' stroke-width='30' stroke-linecap='round'/%3E%3Cpath d='M680,180 L750,120 L720,180 Z M750,120 L800,100 L760,150 Z' fill='%234caf50'/%3E%3Cpath d='M800,280 L860,220 L830,280 Z M860,220 L900,200 L870,250 Z' fill='%234caf50'/%3E%3Ctext x='512' y='720' font-family='Arial' font-size='120' font-weight='bold' text-anchor='middle' fill='%231ba098'%3ESPOTLESS%3C/text%3E%3Ctext x='512' y='880' font-family='Arial' font-size='120' font-weight='bold' text-anchor='middle' fill='%234caf50'%3ESOLUTIONS%3C/text%3E%3C/svg%3E",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "New York",
+            "addressRegion": "NY",
+            "addressCountry": "US"
+        },
+        "serviceArea": {
+            "@type": "Place",
+            "name": "New York City"
+        },
+        "areaServed": ["Manhattan", "Brooklyn", "Queens", "Bronx", "Staten Island"],
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "200"
+        }
+    }
+    </script>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-teal: #1ba098;
+            --primary-teal-dark: #0d7570;
+            --primary-teal-light: #5bc0b8;
+            --secondary-green: #4caf50;
+            --secondary-green-dark: #388e3c;
+            --text-dark: #2c3e50;
+            --text-light: #7f8c8d;
+            --bg-light: #f5f9f8;
+            --bg-white: #ffffff;
+            --border-light: #e0e8e7;
+            --accent-light: #e3f2f1;
+            --success: #4caf50;
+            --error: #e74c3c;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+            line-height: 1.6;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            margin-bottom: 0.5rem;
+            color: var(--primary-teal);
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        a {
+            color: var(--primary-teal);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-teal-dark);
+        }
+
+        /* Buttons */
+        button, .btn {
+            display: inline-block;
+            padding: 0.875rem 1.75rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-teal);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-teal-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(27, 160, 152, 0.2);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary-teal);
+            border: 2px solid var(--primary-teal);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--accent-light);
+            border-color: var(--primary-teal-dark);
+        }
+
+        .btn-green {
+            background-color: var(--secondary-green);
+            color: white;
+        }
+
+        .btn-green:hover {
+            background-color: var(--secondary-green-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(76, 175, 80, 0.2);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: var(--bg-white);
+            border-bottom: 1px solid var(--border-light);
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-teal);
+        }
+
+        .logo-mark {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            background-size: contain;
+            background-position: center;
+            overflow: hidden;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+
+        .logo-mark img {
+            width: 90%;
+            height: 90%;
+            object-fit: contain;
+            padding: 2px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-teal);
+            cursor: pointer;
+        }
+
+        /* Gallery/Showcase */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            border-radius: 16px;
+            overflow: hidden;
+            height: 250px;
+            box-shadow: 0 4px 12px rgba(27, 160, 152, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(27, 160, 152, 0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-item-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.7) 100%);
+            color: white;
+            padding: 1rem;
+            font-weight: 600;
+        }
+
+        nav {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary-teal);
+        }
+
+        .header-ctas {
+            display: flex;
+            gap: 1rem;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-teal);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--bg-light) 0%, #f0fffe 100%);
+            padding: 80px 1.5rem 60px;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(27, 160, 152, 0.05);
+            border-radius: 50%;
+            top: -100px;
+            right: -50px;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(76, 175, 80, 0.03);
+            border-radius: 50%;
+            bottom: -50px;
+            left: 50px;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .hero .highlight {
+            color: var(--primary-teal);
+        }
+
+        .hero-subheader {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Trust Badge */
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            margin-top: 2rem;
+            font-weight: 500;
+        }
+
+        .trust-badge::before {
+            content: '✓';
+            color: var(--secondary-green);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Container & Sections */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 60px 1.5rem;
+        }
+
+        section.alt-bg {
+            background-color: var(--bg-light);
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--bg-white);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid var(--border-light);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 32px rgba(27, 160, 152, 0.1);
+            border-color: var(--primary-teal-light);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-price {
+            color: var(--primary-teal);
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card .btn {
+            width: 100%;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step::after {
+            content: '→';
+            position: absolute;
+            right: -2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: var(--primary-teal-light);
+        }
+
+        .step:last-child::after {
+            display: none;
+        }
+
+        .step-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-light) 100%);
+            color: white;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+        }
+
+        .step h3 {
+            color: var(--text-dark);
+        }
+
+        .step p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Why Choose Us */
+        .why-choose-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .why-item {
+            text-align: center;
+        }
+
+        .why-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .why-item h3 {
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .why-item p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Pricing Section */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .pricing-card {
+            background: var(--bg-white);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid var(--border-light);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 32px rgba(27, 160, 152, 0.1);
+        }
+
+        .pricing-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-description {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .pricing-note {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial {
+            background: var(--bg-white);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid var(--border-light);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial:hover {
+            box-shadow: 0 8px 16px rgba(27, 160, 152, 0.1);
+        }
+
+        .stars {
+            color: #ffc107;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            color: var(--text-dark);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        .testimonial-role {
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        /* Service Areas */
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .area-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: var(--accent-light);
+            border-radius: 12px;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .area-item::before {
+            content: '📍';
+            font-size: 1.3rem;
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 800px;
+            margin: 2rem auto 0;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-light);
+            padding: 1.5rem 0;
+        }
+
+        .faq-item:first-child {
+            padding-top: 0;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font-weight: 600;
+            color: var(--text-dark);
+            padding: 0.5rem 0;
+        }
+
+        .faq-question:hover {
+            color: var(--primary-teal);
+        }
+
+        .faq-toggle {
+            font-size: 1.3rem;
+            color: var(--primary-teal);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-toggle.open {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            display: none;
+            color: var(--text-light);
+            padding-top: 1rem;
+            line-height: 1.6;
+        }
+
+        .faq-answer.show {
+            display: block;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Modals */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background-color: var(--bg-white);
+            padding: 2rem;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            animation: slideUp 0.3s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-light);
+            padding: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-close:hover {
+            color: var(--text-dark);
+        }
+
+        .modal h2 {
+            margin-bottom: 1.5rem;
+            margin-top: 0;
+        }
+
+        /* Forms */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .form-row .form-group {
+            margin-bottom: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 0.875rem;
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary-teal);
+            box-shadow: 0 0 0 3px rgba(27, 160, 152, 0.1);
+        }
+
+        input.error, select.error, textarea.error {
+            border-color: var(--error);
+        }
+
+        input.error:focus, select.error:focus, textarea.error:focus {
+            box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+        }
+
+        .error-message {
+            color: var(--error);
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-button {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .success-state {
+            display: none;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .success-state.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .success-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .success-state h3 {
+            color: var(--success);
+            margin-bottom: 0.5rem;
+        }
+
+        .success-state p {
+            color: var(--text-light);
+        }
+
+        /* Contact Section */
+        .contact-card {
+            background: linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-light) 100%);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            color: white;
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+
+        .contact-card h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .contact-email {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1rem 0;
+            word-break: break-all;
+        }
+
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+
+        .contact-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-white {
+            background-color: white;
+            color: var(--primary-teal);
+        }
+
+        .btn-white:hover {
+            background-color: var(--accent-light);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-dark);
+            color: white;
+            padding: 3rem 1.5rem;
+            margin-top: 0;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-teal-light);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 700;
+            color: var(--primary-teal-light);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .header-ctas {
+                gap: 0.5rem;
+            }
+
+            .btn-secondary {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            section {
+                padding: 40px 1.5rem;
+            }
+
+            section h2 {
+                margin-bottom: 1.5rem;
+                font-size: 1.75rem;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            .hero {
+                padding: 50px 1.5rem 40px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .how-it-works .step::after {
+                display: none;
+            }
+
+            .step {
+                padding: 0;
+            }
+
+            .services-grid,
+            .testimonials-grid,
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-container {
+                height: 60px;
+                padding: 0 1rem;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+                gap: 0.5rem;
+            }
+
+            .logo-mark {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .hero-subheader {
+                font-size: 1rem;
+            }
+
+            .service-card,
+            .testimonial,
+            .pricing-card {
+                padding: 1.5rem;
+            }
+
+            .contact-card {
+                padding: 1.5rem;
+            }
+
+            .modal-content {
+                width: 95%;
+                padding: 1.5rem 1rem;
+                border-radius: 16px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo" onclick="scrollToTop()" style="cursor: pointer;">
+                <div class="logo-mark">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAA4ADgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWm5ybnJ2eoqOkpaanqKmqsrO0tba2uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWm5ybnJ2eoqOkpaanqKmqsrO0tba2uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/2Q==" alt="Spotless Solutions">
+                </div>
+                <span>Spotless Solutions</span>
+            </div>
+            <nav>
+                <a href="#services">Services</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-ctas">
+                <button class="btn btn-primary" onclick="openBookingModal()">Book Appointment</button>
+                <button class="btn btn-secondary" onclick="openQuoteModal()">Get a Quote</button>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Spotless Solutions<br><span class="highlight">NYC Cleaning Made Simple</span></h1>
+            <p class="hero-subheader">Trusted residential & office cleaning across NYC. Book in minutes, enjoy pristine spaces.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary btn-lg" onclick="openBookingModal()">Book Appointment</button>
+                <button class="btn btn-secondary" onclick="openQuoteModal()">Get a Quote</button>
+            </div>
+            <div class="trust-badge">Fully vetted cleaners • Flexible scheduling • 100% satisfaction guarantee</div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="alt-bg">
+        <div class="container">
+            <h2>See the Spotless Difference</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Clean bedroom with natural light">
+                    <div class="gallery-item-label">Bedrooms</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/3829517/pexels-photo-3829517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pristine kitchen">
+                    <div class="gallery-item-label">Kitchens</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Elegant living room">
+                    <div class="gallery-item-label">Living Rooms</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="alt-bg">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Standard Clean</h3>
+                    <p>Dust, vacuum, and organize your home for a fresh feel every time.</p>
+                    <div class="service-price">From $80</div>
+                    <button class="btn btn-green" onclick="openQuoteModal()">Get a Quote</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Deep Clean</h3>
+                    <p>Comprehensive cleaning including baseboards, windows, and detailed scrubbing.</p>
+                    <div class="service-price">From $150</div>
+                    <button class="btn btn-green" onclick="openQuoteModal()">Get a Quote</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3>Move-In/Out</h3>
+                    <p>Complete cleaning before you move in or after you move out.</p>
+                    <div class="service-price">Custom Quote</div>
+                    <button class="btn btn-green" onclick="openQuoteModal()">Get a Quote</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Office Cleaning</h3>
+                    <p>Keep your workplace fresh and professional. Flexible scheduling available.</p>
+                    <div class="service-price">Custom Quote</div>
+                    <button class="btn btn-green" onclick="openQuoteModal()">Get a Quote</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
+                    <h3>Post-Construction</h3>
+                    <p>Thorough cleanup after construction or renovations.</p>
+                    <div class="service-price">Custom Quote</div>
+                    <button class="btn btn-green" onclick="openQuoteModal()">Get a Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="how-it-works">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Book</h3>
+                    <p>Select your service, date, and time. Takes just 2 minutes.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>We Clean</h3>
+                    <p>Our vetted pros arrive on time and work their magic.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>You Relax</h3>
+                    <p>Enjoy your pristine space. No hassle, just results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="alt-bg">
+        <div class="container">
+            <h2>Why Choose Spotless Solutions</h2>
+            <div class="why-choose-grid">
+                <div class="why-item">
+                    <div class="why-icon">🛡️</div>
+                    <h3>Fully Insured</h3>
+                    <p>Complete coverage for your peace of mind.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">⭐</div>
+                    <h3>Vetted Pros</h3>
+                    <p>Screened, trained, and background-checked cleaners.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🌱</div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Safe, sustainable cleaning products for your family.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">✓</div>
+                    <h3>100% Guarantee</h3>
+                    <p>Not satisfied? We'll make it right.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section id="areas">
+        <div class="container">
+            <h2>Service Areas</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">We serve all five boroughs of New York City</p>
+            <div class="areas-grid">
+                <div class="area-item">Manhattan</div>
+                <div class="area-item">Brooklyn</div>
+                <div class="area-item">Queens</div>
+                <div class="area-item">Bronx</div>
+                <div class="area-item">Staten Island</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="alt-bg">
+        <div class="container">
+            <h2>Transparent Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-title">Standard Clean</div>
+                    <div class="pricing-description">One-time residential cleaning</div>
+                    <div class="pricing-note">Starting at $80</div>
+                    <button class="btn btn-primary" onclick="openQuoteModal()">Get a Quote</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-title">Deep Clean</div>
+                    <div class="pricing-description">Comprehensive room-by-room cleaning</div>
+                    <div class="pricing-note">Starting at $150</div>
+                    <button class="btn btn-primary" onclick="openQuoteModal()">Get a Quote</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-title">Recurring Service</div>
+                    <div class="pricing-description">Weekly or bi-weekly maintenance</div>
+                    <div class="pricing-note">Ask about 10% discount</div>
+                    <button class="btn btn-primary" onclick="openQuoteModal()">Get a Quote</button>
+                </div>
+            </div>
+            <p style="text-align: center; color: var(--text-light); margin-top: 2rem; font-style: italic;">Custom quotes available for Move-In/Out, Office, and Post-Construction services.</p>
+        </div>
+    </section>
+
+    <!-- Reviews/Testimonials -->
+    <section id="reviews">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-text">"Spotless Solutions transformed our apartment. Professional, punctual, and thorough. Highly recommend!"</div>
+                    <div class="testimonial-author">Sarah M.</div>
+                    <div class="testimonial-role">Manhattan</div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-text">"Best cleaning service in Brooklyn. They handle my office every Friday, and it's always perfect."</div>
+                    <div class="testimonial-author">Michael T.</div>
+                    <div class="testimonial-role">Brooklyn</div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-text">"The move-out cleaning was incredible. Our landlord was shocked at how spotless everything was!"</div>
+                    <div class="testimonial-author">Jessica L.</div>
+                    <div class="testimonial-role">Queens</div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-text">"Reliable, courteous, and they use eco-friendly products. Exactly what I was looking for."</div>
+                    <div class="testimonial-author">David R.</div>
+                    <div class="testimonial-role">Bronx</div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-text">"After my renovation, they cleaned every nook and cranny. Professional and detail-oriented."</div>
+                    <div class="testimonial-author">Patricia W.</div>
+                    <div class="testimonial-role">Staten Island</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="alt-bg">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How do I book an appointment?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Click "Book Appointment" at the top or bottom of this page, fill in your details, select your preferred date and time, and submit. We'll confirm your booking via email within 2 hours.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I reschedule my appointment?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! You can reschedule up to 24 hours before your scheduled appointment. Just email us at Spotless.solutions1105@gmail.com with your booking details and new preferred date.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What products do you use?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        We use eco-friendly, non-toxic cleaning products that are safe for families and pets. If you have specific product preferences or allergies, let us know when booking.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Are your cleaners pet-friendly?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Our cleaners are experienced working in homes with pets. Please let us know the type and temperament of your pet when you book, so we can prepare accordingly.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What if I'm not satisfied with the cleaning?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Your satisfaction is guaranteed! If you're not happy with any aspect of our service, contact us within 24 hours and we'll send our team back to make it right—no charge.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How long does a typical cleaning take?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Standard Clean: 2-3 hours | Deep Clean: 3-4 hours | Office: varies by size | Move-In/Out & Post-Construction: custom estimate. Times may vary based on home size and condition.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <div class="contact-card">
+                <h3>Shine Without the Stress</h3>
+                <p>Questions? Reach out anytime. We're here to help.</p>
+                <a href="mailto:Spotless.solutions1105@gmail.com" class="contact-email">Spotless.solutions1105@gmail.com</a>
+                <div class="contact-actions">
+                    <button class="btn btn-white" onclick="openBookingModal()">Book Now</button>
+                    <button class="btn btn-white" onclick="openQuoteModal()">Get Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">✨ Spotless Solutions</div>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem;">Shine without the stress.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#areas">Service Areas</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contact">Terms & Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><a href="mailto:Spotless.solutions1105@gmail.com">Email us</a></li>
+                        <li>NYC Service Area</li>
+                        <li style="margin-top: 1rem; font-size: 0.85rem; color: rgba(255, 255, 255, 0.6);">✓ Fully Insured<br>✓ Eco-Friendly<br>✓ 100% Guarantee</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Spotless Solutions, NYC. All rights reserved. | <a href="#" style="color: inherit;">Terms of Service</a> | <a href="#" style="color: inherit;">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div id="quoteModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeQuoteModal()">✕</button>
+            <h2>Get Your Quote</h2>
+            
+            <form id="quoteForm" onsubmit="handleQuoteSubmit(event)">
+                <div class="form-group">
+                    <label for="quoteName">Full Name *</label>
+                    <input type="text" id="quoteName" required>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="quoteService">Service Needed *</label>
+                    <select id="quoteService" required>
+                        <option value="">Select a service...</option>
+                        <option value="Standard Clean">Standard Clean</option>
+                        <option value="Deep Clean">Deep Clean</option>
+                        <option value="Move-In/Out">Move-In/Out</option>
+                        <option value="Office Cleaning">Office Cleaning</option>
+                        <option value="Post-Construction">Post-Construction</option>
+                    </select>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="quoteBedrooms">Bedrooms *</label>
+                        <select id="quoteBedrooms" required>
+                            <option value="">Select...</option>
+                            <option value="Studio">Studio</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5+</option>
+                        </select>
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quoteBathrooms">Bathrooms *</label>
+                        <select id="quoteBathrooms" required>
+                            <option value="">Select...</option>
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                            <option value="3.5+">3.5+</option>
+                        </select>
+                        <div class="error-message"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="quoteFrequency">Frequency *</label>
+                    <select id="quoteFrequency" required>
+                        <option value="">Select...</option>
+                        <option value="One-time">One-time</option>
+                        <option value="Weekly">Weekly</option>
+                        <option value="Bi-weekly">Bi-weekly</option>
+                        <option value="Monthly">Monthly</option>
+                    </select>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="quoteDate">Preferred Date *</label>
+                    <input type="date" id="quoteDate" required>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="quotePhone">Phone Number *</label>
+                    <input type="tel" id="quotePhone" placeholder="(555) 123-4567" required>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="quoteEmail">Email *</label>
+                    <input type="email" id="quoteEmail" required>
+                    <div class="error-message"></div>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-button">Request Quote</button>
+            </form>
+
+            <div id="quoteSuccess" class="success-state">
+                <div class="success-icon">✓</div>
+                <h3>Quote Request Received!</h3>
+                <p>Thanks! We'll confirm your quote shortly. Check your email for details.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeBookingModal()">✕</button>
+            <h2>Book Your Appointment</h2>
+            
+            <form id="bookingForm" onsubmit="handleBookingSubmit(event)">
+                <div class="form-group">
+                    <label for="bookName">Full Name *</label>
+                    <input type="text" id="bookName" required>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookService">Service Needed *</label>
+                    <select id="bookService" required>
+                        <option value="">Select a service...</option>
+                        <option value="Standard Clean">Standard Clean</option>
+                        <option value="Deep Clean">Deep Clean</option>
+                        <option value="Move-In/Out">Move-In/Out</option>
+                        <option value="Office Cleaning">Office Cleaning</option>
+                        <option value="Post-Construction">Post-Construction</option>
+                    </select>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bookBedrooms">Bedrooms *</label>
+                        <select id="bookBedrooms" required>
+                            <option value="">Select...</option>
+                            <option value="Studio">Studio</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5+</option>
+                        </select>
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookBathrooms">Bathrooms *</label>
+                        <select id="bookBathrooms" required>
+                            <option value="">Select...</option>
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                            <option value="3.5+">3.5+</option>
+                        </select>
+                        <div class="error-message"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookFrequency">Frequency *</label>
+                    <select id="bookFrequency" required>
+                        <option value="">Select...</option>
+                        <option value="One-time">One-time</option>
+                        <option value="Weekly">Weekly</option>
+                        <option value="Bi-weekly">Bi-weekly</option>
+                        <option value="Monthly">Monthly</option>
+                    </select>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookDate">Preferred Date *</label>
+                    <input type="date" id="bookDate" required>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookPhone">Phone Number *</label>
+                    <input type="tel" id="bookPhone" placeholder="(555) 123-4567" required>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookEmail">Email *</label>
+                    <input type="email" id="bookEmail" required>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookNotes">Additional Notes (optional)</label>
+                    <textarea id="bookNotes" placeholder="Tell us about your home or any special requests..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-button">Confirm Booking</button>
+            </form>
+
+            <div id="bookingSuccess" class="success-state">
+                <div class="success-icon">✓</div>
+                <h3>Booking Confirmed!</h3>
+                <p>Your appointment is set! Check your email for confirmation details. We'll see you soon!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Scroll to Top Function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Modal Functions
+        function openQuoteModal() {
+            document.getElementById('quoteModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeQuoteModal() {
+            document.getElementById('quoteModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+            resetQuoteForm();
+        }
+
+        function openBookingModal() {
+            document.getElementById('bookingModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+            resetBookingForm();
+        }
+
+        // Close modal on background click
+        document.getElementById('quoteModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeQuoteModal();
+            }
+        });
+
+        document.getElementById('bookingModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeBookingModal();
+            }
+        });
+
+        // Form Validation
+        function validateEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        function validatePhone(phone) {
+            return /^\d{10,}$/.test(phone.replace(/\D/g, ''));
+        }
+
+        function formatPhone(phone) {
+            const cleaned = phone.replace(/\D/g, '');
+            if (cleaned.length >= 10) {
+                return `(${cleaned.slice(0, 3)}) ${cleaned.slice(3, 6)}-${cleaned.slice(6, 10)}`;
+            }
+            return phone;
+        }
+
+        // Quote Form Submission
+        function handleQuoteSubmit(event) {
+            event.preventDefault();
+            
+            const form = document.getElementById('quoteForm');
+            const nameInput = document.getElementById('quoteName');
+            const serviceInput = document.getElementById('quoteService');
+            const bedroomsInput = document.getElementById('quoteBedrooms');
+            const bathroomsInput = document.getElementById('quoteBathrooms');
+            const frequencyInput = document.getElementById('quoteFrequency');
+            const dateInput = document.getElementById('quoteDate');
+            const phoneInput = document.getElementById('quotePhone');
+            const emailInput = document.getElementById('quoteEmail');
+            
+            let isValid = true;
+            
+            // Validate inputs
+            if (!nameInput.value.trim()) {
+                showFieldError(nameInput, 'Name is required');
+                isValid = false;
+            } else {
+                clearFieldError(nameInput);
+            }
+            
+            if (!serviceInput.value) {
+                showFieldError(serviceInput, 'Please select a service');
+                isValid = false;
+            } else {
+                clearFieldError(serviceInput);
+            }
+            
+            if (!bedroomsInput.value) {
+                showFieldError(bedroomsInput, 'Please select number of bedrooms');
+                isValid = false;
+            } else {
+                clearFieldError(bedroomsInput);
+            }
+            
+            if (!bathroomsInput.value) {
+                showFieldError(bathroomsInput, 'Please select number of bathrooms');
+                isValid = false;
+            } else {
+                clearFieldError(bathroomsInput);
+            }
+            
+            if (!frequencyInput.value) {
+                showFieldError(frequencyInput, 'Please select frequency');
+                isValid = false;
+            } else {
+                clearFieldError(frequencyInput);
+            }
+            
+            if (!dateInput.value) {
+                showFieldError(dateInput, 'Date is required');
+                isValid = false;
+            } else {
+                clearFieldError(dateInput);
+            }
+            
+            if (!validatePhone(phoneInput.value)) {
+                showFieldError(phoneInput, 'Valid phone number required');
+                isValid = false;
+            } else {
+                clearFieldError(phoneInput);
+            }
+            
+            if (!validateEmail(emailInput.value)) {
+                showFieldError(emailInput, 'Valid email required');
+                isValid = false;
+            } else {
+                clearFieldError(emailInput);
+            }
+            
+            if (!isValid) return;
+            
+            // Prepare email
+            const emailData = {
+                to: 'Spotless.solutions1105@gmail.com',
+                subject: `New Quote Request from ${nameInput.value}`,
+                message: `
+                    Quote Request Details:
+                    
+                    Name: ${nameInput.value}
+                    Service: ${serviceInput.value}
+                    Bedrooms: ${bedroomsInput.value}
+                    Bathrooms: ${bathroomsInput.value}
+                    Frequency: ${frequencyInput.value}
+                    Preferred Date: ${dateInput.value}
+                    Phone: ${phoneInput.value}
+                    Email: ${emailInput.value}
+                    
+                    Please follow up with the client soon.
+                `
+            };
+            
+            // Send via FormSubmit or similar service
+            sendEmailViaAPI(emailData, 'quote');
+            
+            // Show success state
+            form.style.display = 'none';
+            document.getElementById('quoteSuccess').classList.add('show');
+            
+            // Close modal after 3 seconds
+            setTimeout(closeQuoteModal, 3000);
+        }
+
+        // Booking Form Submission
+        function handleBookingSubmit(event) {
+            event.preventDefault();
+            
+            const form = document.getElementById('bookingForm');
+            const nameInput = document.getElementById('bookName');
+            const serviceInput = document.getElementById('bookService');
+            const bedroomsInput = document.getElementById('bookBedrooms');
+            const bathroomsInput = document.getElementById('bookBathrooms');
+            const frequencyInput = document.getElementById('bookFrequency');
+            const dateInput = document.getElementById('bookDate');
+            const phoneInput = document.getElementById('bookPhone');
+            const emailInput = document.getElementById('bookEmail');
+            const notesInput = document.getElementById('bookNotes');
+            
+            let isValid = true;
+            
+            // Validate inputs
+            if (!nameInput.value.trim()) {
+                showFieldError(nameInput, 'Name is required');
+                isValid = false;
+            } else {
+                clearFieldError(nameInput);
+            }
+            
+            if (!serviceInput.value) {
+                showFieldError(serviceInput, 'Please select a service');
+                isValid = false;
+            } else {
+                clearFieldError(serviceInput);
+            }
+            
+            if (!bedroomsInput.value) {
+                showFieldError(bedroomsInput, 'Please select number of bedrooms');
+                isValid = false;
+            } else {
+                clearFieldError(bedroomsInput);
+            }
+            
+            if (!bathroomsInput.value) {
+                showFieldError(bathroomsInput, 'Please select number of bathrooms');
+                isValid = false;
+            } else {
+                clearFieldError(bathroomsInput);
+            }
+            
+            if (!frequencyInput.value) {
+                showFieldError(frequencyInput, 'Please select frequency');
+                isValid = false;
+            } else {
+                clearFieldError(frequencyInput);
+            }
+            
+            if (!dateInput.value) {
+                showFieldError(dateInput, 'Date is required');
+                isValid = false;
+            } else {
+                clearFieldError(dateInput);
+            }
+            
+            if (!validatePhone(phoneInput.value)) {
+                showFieldError(phoneInput, 'Valid phone number required');
+                isValid = false;
+            } else {
+                clearFieldError(phoneInput);
+            }
+            
+            if (!validateEmail(emailInput.value)) {
+                showFieldError(emailInput, 'Valid email required');
+                isValid = false;
+            } else {
+                clearFieldError(emailInput);
+            }
+            
+            if (!isValid) return;
+            
+            // Prepare email
+            const emailData = {
+                to: 'Spotless.solutions1105@gmail.com',
+                subject: `New Booking Request from ${nameInput.value}`,
+                message: `
+                    Booking Details:
+                    
+                    Name: ${nameInput.value}
+                    Service: ${serviceInput.value}
+                    Bedrooms: ${bedroomsInput.value}
+                    Bathrooms: ${bathroomsInput.value}
+                    Frequency: ${frequencyInput.value}
+                    Preferred Date: ${dateInput.value}
+                    Phone: ${phoneInput.value}
+                    Email: ${emailInput.value}
+                    Notes: ${notesInput.value || 'None'}
+                    
+                    Please confirm this booking with the client.
+                `
+            };
+            
+            // Send via FormSubmit or similar service
+            sendEmailViaAPI(emailData, 'booking');
+            
+            // Show success state
+            form.style.display = 'none';
+            document.getElementById('bookingSuccess').classList.add('show');
+            
+            // Close modal after 3 seconds
+            setTimeout(closeBookingModal, 3000);
+        }
+
+        // Email sending function (using FormSubmit.co or similar free service)
+        function sendEmailViaAPI(emailData, type) {
+            // This is a simple implementation using a fetch to a form service
+            // In production, you'd use a proper backend or email service like SendGrid
+            
+            // For now, we'll use a simple console log and localStorage
+            console.log('Email Data:', emailData);
+            
+            // Store submission locally (in production, send to backend)
+            const submissions = JSON.parse(localStorage.getItem('spotless_submissions') || '[]');
+            submissions.push({
+                type: type,
+                data: emailData,
+                timestamp: new Date().toISOString()
+            });
+            localStorage.setItem('spotless_submissions', JSON.stringify(submissions));
+            
+            // Optional: Send to a service like FormSubmit.co
+            // Uncomment below and configure with your email
+            /*
+            fetch('https://formsubmit.co/Spotless.solutions1105@gmail.com', {
+                method: 'POST',
+                body: JSON.stringify(emailData),
+                headers: { 'Content-Type': 'application/json' }
+            }).catch(err => console.error('Email send error:', err));
+            */
+        }
+
+        // Field error handling
+        function showFieldError(input, message) {
+            input.classList.add('error');
+            const errorMsg = input.parentElement.querySelector('.error-message');
+            if (errorMsg) {
+                errorMsg.textContent = message;
+                errorMsg.classList.add('show');
+            }
+        }
+
+        function clearFieldError(input) {
+            input.classList.remove('error');
+            const errorMsg = input.parentElement.querySelector('.error-message');
+            if (errorMsg) {
+                errorMsg.classList.remove('show');
+            }
+        }
+
+        function resetQuoteForm() {
+            document.getElementById('quoteForm').reset();
+            document.getElementById('quoteSuccess').classList.remove('show');
+            document.getElementById('quoteForm').style.display = 'block';
+            document.querySelectorAll('#quoteModal input, #quoteModal select').forEach(el => {
+                clearFieldError(el);
+            });
+        }
+
+        function resetBookingForm() {
+            document.getElementById('bookingForm').reset();
+            document.getElementById('bookingSuccess').classList.remove('show');
+            document.getElementById('bookingForm').style.display = 'block';
+            document.querySelectorAll('#bookingModal input, #bookingModal select, #bookingModal textarea').forEach(el => {
+                clearFieldError(el);
+            });
+        }
+
+        // FAQ Toggle
+        function toggleFAQ(question) {
+            const answer = question.nextElementSibling;
+            const toggle = question.querySelector('.faq-toggle');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== question.parentElement) {
+                    item.querySelector('.faq-answer').classList.remove('show');
+                    item.querySelector('.faq-toggle').classList.remove('open');
+                }
+            });
+            
+            // Toggle current FAQ
+            answer.classList.toggle('show');
+            toggle.classList.toggle('open');
+        }
+
+        // Phone number formatting on input
+        document.addEventListener('input', function(e) {
+            if (e.target.type === 'tel') {
+                e.target.value = formatPhone(e.target.value);
+            }
+        });
+
+        // Smooth scroll offset for sticky header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const headerOffset = 70;
+                        const elementPosition = target.offsetTop;
+                        const offsetPosition = elementPosition - headerOffset;
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Set minimum date to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('quoteDate').setAttribute('min', today);
+        document.getElementById('bookDate').setAttribute('min', today);
+    </script>
+</body>
+</html>
