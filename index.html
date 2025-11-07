@@ -301,6 +301,47 @@
             font-size: 1.5rem;
             cursor: pointer;
             color: var(--primary-teal);
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+        
+        .mobile-menu-btn.active {
+            color: var(--error);
+        }
+        
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: white;
+            border-bottom: 1px solid var(--border-light);
+            flex-direction: column;
+            gap: 0;
+            padding: 1rem 0;
+            z-index: 999;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .mobile-nav.active {
+            display: flex;
+        }
+        
+        .mobile-nav a {
+            padding: 0.75rem 1.5rem;
+            border-bottom: 1px solid var(--border-light);
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+        
+        .mobile-nav a:hover {
+            background-color: var(--accent-light);
+            color: var(--primary-teal);
+        }
+        
+        .mobile-nav a:last-child {
+            border-bottom: none;
         }
 
         /* Hero Section */
@@ -1111,11 +1152,20 @@
             <div class="header-ctas">
                 <button class="btn btn-primary" onclick="openBookingModal()">Book Appointment</button>
                 <button class="btn btn-secondary" onclick="openQuoteModal()">Get a Quote</button>
-            </div>
-            <button class="mobile-menu-btn">☰</button>
+            </div>            
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
         </div>
     </header>
-
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#services" onclick="closeMobileMenu()">Services</a>
+        <a href="#how-it-works" onclick="closeMobileMenu()">How It Works</a>
+        <a href="#pricing" onclick="closeMobileMenu()">Pricing</a>
+        <a href="#reviews" onclick="closeMobileMenu()">Reviews</a>
+        <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+        <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+    </nav>
+        
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
@@ -1657,6 +1707,33 @@
             });
         }
 
+        // Mobile Menu Functions
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            mobileNav.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        }
+        
+        function closeMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            mobileNav.classList.remove('active');
+            menuBtn.classList.remove('active');
+        }
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const header = document.querySelector('header');
+            const mobileNav = document.getElementById('mobileNav');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (!header.contains(event.target)) {
+                mobileNav.classList.remove('active');
+                menuBtn.classList.remove('active');
+            }
+        });
+        
         // Modal Functions
         function openQuoteModal() {
             document.getElementById('quoteModal').classList.add('active');
