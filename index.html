@@ -1022,7 +1022,7 @@
             nav {
                 display: none;
             }
-
+            /*
             .header-ctas {
                 gap: 0.5rem;
             }
@@ -1034,7 +1034,37 @@
             .mobile-menu-btn {
                 display: block;
             }
-
+            */
+            .header-ctas {
+                gap: 0.5rem;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                right: 1rem;
+                background: white;
+                padding: 0.75rem;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                z-index: 998;
+                min-width: 150px;
+            }
+            
+            .btn-secondary {
+                display: block;
+                width: 100%;
+                font-size: 0.9rem;
+                padding: 0.7rem 1rem;
+            }
+            
+            .btn-primary {
+                width: 100%;
+                font-size: 0.9rem;
+                padding: 0.7rem 1rem;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
             section {
                 padding: 40px 1.5rem;
             }
