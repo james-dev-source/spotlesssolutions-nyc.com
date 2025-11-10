@@ -2184,10 +2184,13 @@
                 const result = await response.json();
                 
                 if (result.success) {
-                    status.innerHTML = "Thanks! We'll confirm your quote shortly.";
+                    status.innerHTML = ""; //Thanks! We'll confirm your quote shortly.";
                     status.style.color = "#4caf50";
                     quoteForm.reset();
-                    setTimeout(closeQuoteModal, 2000);
+                    
+                    document.getElementById('quoteSuccess').classList.add('show');
+
+                    setTimeout(closeQuoteModal, 3000);
                 } else {
                     status.innerHTML = result.message || "Error submitting form";
                     status.style.color = "#e74c3c";
