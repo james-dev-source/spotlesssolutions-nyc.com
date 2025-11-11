@@ -1850,20 +1850,29 @@
             <label for="quoteService">Service Needed *</label>
             <select id="quoteService" name="service" required>
               <option value="">Select a service...</option>
-              <option value="Standard Clean">Standard Clean</option>
-              <option value="Deep Clean">Deep Clean</option>
-              <option value="Move-In/Out">Move-In/Out</option>
-              <option value="Office Cleaning">Office Cleaning</option>
-              <option value="Post-Construction">Post-Construction</option>
+              <option value="Office & Facility Cleaning">
+                Office & Facility Cleaning
+              </option>
+              <option value="Deep Cleaning & Disinfection">
+                Deep Cleaning & Disinfection
+              </option>
+              <option value="Recurring Commercial Contracts">
+                Recurring Commercial Contracts
+              </option>
+              <option value="Post-Construction Cleanup">
+                Post-Construction Cleanup
+              </option>
+              <option value="Move-In / Move-Out Cleaning">
+                Move-In / Move-Out Cleaning
+              </option>
             </select>
           </div>
 
           <div class="form-row">
             <div class="form-group">
-              <label for="quoteBedrooms">Bedrooms *</label>
+              <label for="quoteBedrooms">Rooms *</label>
               <select id="quoteBedrooms" name="bedrooms" required>
                 <option value="">Select...</option>
-                <option value="Studio">Studio</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -1952,21 +1961,30 @@
             <label for="bookService">Service Needed *</label>
             <select id="bookService" required>
               <option value="">Select a service...</option>
-              <option value="Standard Clean">Standard Clean</option>
-              <option value="Deep Clean">Deep Clean</option>
-              <option value="Move-In/Out">Move-In/Out</option>
-              <option value="Office Cleaning">Office Cleaning</option>
-              <option value="Post-Construction">Post-Construction</option>
+              <option value="Office & Facility Cleaning">
+                Office & Facility Cleaning
+              </option>
+              <option value="Deep Cleaning & Disinfection">
+                Deep Cleaning & Disinfection
+              </option>
+              <option value="Recurring Commercial Contracts">
+                Recurring Commercial Contracts
+              </option>
+              <option value="Post-Construction Cleanup">
+                Post-Construction Cleanup
+              </option>
+              <option value="Move-In / Move-Out Cleaning">
+                Move-In / Move-Out Cleaning
+              </option>
             </select>
             <div class="error-message"></div>
           </div>
 
           <div class="form-row">
             <div class="form-group">
-              <label for="bookBedrooms">Bedrooms *</label>
+              <label for="bookBedrooms">Rooms *</label>
               <select id="bookBedrooms" required>
                 <option value="">Select...</option>
-                <option value="Studio">Studio</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -2146,112 +2164,6 @@
         return phone;
       }
 
-      // Quote Form Submission
-      function handleQuoteSubmitXXX(event) {
-        event.preventDefault();
-
-        const form = document.getElementById("quoteForm");
-        const nameInput = document.getElementById("quoteName");
-        const serviceInput = document.getElementById("quoteService");
-        const bedroomsInput = document.getElementById("quoteBedrooms");
-        const bathroomsInput = document.getElementById("quoteBathrooms");
-        const frequencyInput = document.getElementById("quoteFrequency");
-        const dateInput = document.getElementById("quoteDate");
-        const phoneInput = document.getElementById("quotePhone");
-        const emailInput = document.getElementById("quoteEmail");
-
-        let isValid = true;
-
-        // Validate inputs
-        if (!nameInput.value.trim()) {
-          showFieldError(nameInput, "Name is required");
-          isValid = false;
-        } else {
-          clearFieldError(nameInput);
-        }
-
-        if (!serviceInput.value) {
-          showFieldError(serviceInput, "Please select a service");
-          isValid = false;
-        } else {
-          clearFieldError(serviceInput);
-        }
-
-        if (!bedroomsInput.value) {
-          showFieldError(bedroomsInput, "Please select number of bedrooms");
-          isValid = false;
-        } else {
-          clearFieldError(bedroomsInput);
-        }
-
-        if (!bathroomsInput.value) {
-          showFieldError(bathroomsInput, "Please select number of bathrooms");
-          isValid = false;
-        } else {
-          clearFieldError(bathroomsInput);
-        }
-
-        if (!frequencyInput.value) {
-          showFieldError(frequencyInput, "Please select frequency");
-          isValid = false;
-        } else {
-          clearFieldError(frequencyInput);
-        }
-
-        if (!dateInput.value) {
-          showFieldError(dateInput, "Date is required");
-          isValid = false;
-        } else {
-          clearFieldError(dateInput);
-        }
-
-        if (!validatePhone(phoneInput.value)) {
-          showFieldError(phoneInput, "Valid phone number required");
-          isValid = false;
-        } else {
-          clearFieldError(phoneInput);
-        }
-
-        if (!validateEmail(emailInput.value)) {
-          showFieldError(emailInput, "Valid email required");
-          isValid = false;
-        } else {
-          clearFieldError(emailInput);
-        }
-
-        if (!isValid) return;
-
-        // Prepare email
-        const emailData = {
-          to: "spotless.solutions1105@gmail.com",
-          subject: `New Quote Request from ${nameInput.value}`,
-          message: `
-                    Quote Request Details:
-                    
-                    Name: ${nameInput.value}
-                    Service: ${serviceInput.value}
-                    Bedrooms: ${bedroomsInput.value}
-                    Bathrooms: ${bathroomsInput.value}
-                    Frequency: ${frequencyInput.value}
-                    Preferred Date: ${dateInput.value}
-                    Phone: ${phoneInput.value}
-                    Email: ${emailInput.value}
-                    
-                    Please follow up with the client soon.
-                `,
-        };
-
-        // Send via FormSubmit or similar service
-        sendEmailViaAPI(emailData, "quote");
-
-        // Show success state
-        form.style.display = "none";
-        document.getElementById("quoteSuccess").classList.add("show");
-
-        // Close modal after 3 seconds
-        setTimeout(closeQuoteModal, 3000);
-      }
-
       // Booking Form Submission
       function handleBookingSubmit(event) {
         event.preventDefault();
@@ -2285,7 +2197,7 @@
         }
 
         if (!bedroomsInput.value) {
-          showFieldError(bedroomsInput, "Please select number of bedrooms");
+          showFieldError(bedroomsInput, "Please select number of rooms");
           isValid = false;
         } else {
           clearFieldError(bedroomsInput);
@@ -2453,6 +2365,97 @@
         toggle.classList.toggle("open");
       }
 
+      // Validation helper function
+      function validateQuoteForm(formElement) {
+        let isValid = true;
+
+        // Get all form inputs
+        const nameInput = formElement.querySelector('input[name="name"]');
+        const serviceInput = formElement.querySelector(
+          'select[name="service"]'
+        );
+        const bedroomsInput = formElement.querySelector(
+          'select[name="bedrooms"]'
+        );
+        const bathroomsInput = formElement.querySelector(
+          'select[name="bathrooms"]'
+        );
+        const frequencyInput = formElement.querySelector(
+          'select[name="frequency"]'
+        );
+        const dateInput = formElement.querySelector(
+          'input[name="preferred_date"]'
+        );
+        const phoneInput = formElement.querySelector('input[name="phone"]');
+        const emailInput = formElement.querySelector('input[name="email"]');
+
+        // Validate Name
+        if (!nameInput.value.trim()) {
+          showFieldError(nameInput, "Name is required");
+          isValid = false;
+        } else {
+          clearFieldError(nameInput);
+        }
+
+        // Validate Service
+        if (!serviceInput.value) {
+          showFieldError(serviceInput, "Please select a service");
+          isValid = false;
+        } else {
+          clearFieldError(serviceInput);
+        }
+
+        // Validate Bedrooms
+        if (!bedroomsInput.value) {
+          showFieldError(bedroomsInput, "Please select number of rooms");
+          isValid = false;
+        } else {
+          clearFieldError(bedroomsInput);
+        }
+
+        // Validate Bathrooms
+        if (!bathroomsInput.value) {
+          showFieldError(bathroomsInput, "Please select number of bathrooms");
+          isValid = false;
+        } else {
+          clearFieldError(bathroomsInput);
+        }
+
+        // Validate Frequency
+        if (!frequencyInput.value) {
+          showFieldError(frequencyInput, "Please select frequency");
+          isValid = false;
+        } else {
+          clearFieldError(frequencyInput);
+        }
+
+        // Validate Date
+        if (!dateInput.value) {
+          showFieldError(dateInput, "Date is required");
+          isValid = false;
+        } else {
+          clearFieldError(dateInput);
+        }
+
+        // Validate Phone
+        if (!validatePhone(phoneInput.value)) {
+          showFieldError(phoneInput, "Valid phone number required");
+          isValid = false;
+        } else {
+          clearFieldError(phoneInput);
+        }
+
+        // Validate Email
+        if (!validateEmail(emailInput.value)) {
+          showFieldError(emailInput, "Valid email required");
+          isValid = false;
+        } else {
+          clearFieldError(emailInput);
+        }
+
+        return isValid;
+      }
+
       // Phone number formatting on input
       document.addEventListener("input", function (e) {
         if (e.target.type === "tel") {
@@ -2491,6 +2494,13 @@
       async function handleQuoteSubmit(event) {
         event.preventDefault();
         var status = document.getElementById("quote-form-status");
+
+        // VALIDATE FORM FIRST
+        if (!validateQuoteForm(quoteForm)) {
+          status.innerHTML = "Please fix the errors above";
+          status.style.color = "#e74c3c";
+          return;
+        }
         var formData = new FormData(event.target);
 
         // Convert form data to object
