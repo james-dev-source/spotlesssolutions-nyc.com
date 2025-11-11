@@ -30,8 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Email: $email\n";
     $message .= "Phone: $phone\n";
     $message .= "Service: $service\n";
-    $message .= "Bedrooms: $bedrooms\n";
-    $message .= "Bathrooms: $bathrooms\n";
+    $message .= "Rooms: $bedrooms\n";
+    $message .= "Restrooms: $bathrooms\n";
     $message .= "Frequency: $frequency\n";
     $message .= "Preferred Date: $preferred_date\n";
     $message .= "\n==========================================\n";
