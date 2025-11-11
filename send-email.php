@@ -19,15 +19,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $data['email'] ?? '';
     $phone = $data['phone'] ?? '';
     $service = $data['service'] ?? '';
-    
+    $bedrooms = $data['bedrooms'] ?? '';
+    $bathrooms = $data['bathrooms'] ?? '';
+    $frequency = $data['frequency'] ?? '';
+    $preferred_date = $data['preferred_date'] ?? '';
+
+    $message = "New Quote Request\n";
+    $message .= "==========================================\n\n";
+    $message .= "Name: $name\n";
+    $message .= "Email: $email\n";
+    $message .= "Phone: $phone\n";
+    $message .= "Service: $service\n";
+    $message .= "Bedrooms: $bedrooms\n";
+    $message .= "Bathrooms: $bathrooms\n";
+    $message .= "Frequency: $frequency\n";
+    $message .= "Preferred Date: $preferred_date\n";
+    $message .= "\n==========================================\n";
+
     $to = "jamesc2128@gmail.com";
     $subject = "New Quote Request from $name";
-    $headers = "From: info@spotlesssolutionsnyc.com\r\n";
+
+    $headers = "From: SpotlessSolutionsNYC@spotlesssolutionsnyc.com\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-    
-    $message = "Name: $name\nEmail: $email\nPhone: $phone\nService: $service\n";
-    
+
     $success = mail($to, $subject, $message, $headers);
     
     if ($success) {

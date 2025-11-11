@@ -7,8 +7,7 @@ $headers = "From: test@spotlesssolutionsnyc.com\r\n";
 $result = mail($to, $subject, $message, $headers);
 
 if ($result) {
-    echo "SUCCESS: Email sent!";
+    echo "SUCCESS: Email sent!!!!";
 } else {
-    echo "FAILED: Email did not send";
+    echo "FAILED: Email did not send!!!";
 }
-?>

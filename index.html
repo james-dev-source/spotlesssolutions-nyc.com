@@ -2512,9 +2512,13 @@
             status.style.color = "#4caf50";
             quoteForm.reset();
 
+            // Show success state
+            quoteForm.style.display = "none";
             document.getElementById("quoteSuccess").classList.add("show");
 
-            setTimeout(closeQuoteModal, 2000);
+            // Close modal after 3 seconds
+            setTimeout(closeQuoteModal, 3000);
+
             status.innerHTML = "";
           } else {
             status.innerHTML = result.message || "Error submitting form";
