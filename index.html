@@ -1882,7 +1882,7 @@
             </div>
 
             <div class="form-group">
-              <label for="quoteBathrooms">Bathrooms *</label>
+              <label for="quoteBathrooms">Restrooms *</label>
               <select id="quoteBathrooms" name="bathrooms" required>
                 <option value="">Select...</option>
                 <option value="1">1</option>
@@ -1950,7 +1950,7 @@
         <button class="modal-close" onclick="closeBookingModal()">✕</button>
         <h2>Book Your Appointment</h2>
 
-        <form id="bookingForm" onsubmit="handleBookingSubmit(event)">
+        <form id="bookingForm">
           <div class="form-group">
             <label for="bookName">Full Name *</label>
             <input type="text" id="bookName" required />
@@ -1995,7 +1995,7 @@
             </div>
 
             <div class="form-group">
-              <label for="bookBathrooms">Bathrooms *</label>
+              <label for="bookBathrooms">Restrooms *</label>
               <select id="bookBathrooms" required>
                 <option value="">Select...</option>
                 <option value="1">1</option>
@@ -2055,6 +2055,7 @@
           <button type="submit" class="btn btn-primary form-button">
             Confirm Booking
           </button>
+          <p id="booking-form-status"></p>
         </form>
 
         <div id="bookingSuccess" class="success-state">
@@ -2165,7 +2166,7 @@
       }
 
       // Booking Form Submission
-      function handleBookingSubmit(event) {
+      function handleBookingSubmitXXX(event) {
         event.preventDefault();
 
         const form = document.getElementById("bookingForm");
@@ -2204,7 +2205,7 @@
         }
 
         if (!bathroomsInput.value) {
-          showFieldError(bathroomsInput, "Please select number of bathrooms");
+          showFieldError(bathroomsInput, "Please select number of restrooms");
           isValid = false;
         } else {
           clearFieldError(bathroomsInput);
@@ -2366,7 +2367,7 @@
       }
 
       // Validation helper function
-      function validateQuoteForm(formElement) {
+      function validateTheForm(formElement) {
         let isValid = true;
 
         // Get all form inputs
@@ -2415,7 +2416,7 @@
 
         // Validate Bathrooms
         if (!bathroomsInput.value) {
-          showFieldError(bathroomsInput, "Please select number of bathrooms");
+          showFieldError(bathroomsInput, "Please select number of restrooms");
           isValid = false;
         } else {
           clearFieldError(bathroomsInput);
@@ -2490,13 +2491,14 @@
 
       // GoDaddy PHP Email Handler
       var quoteForm = document.getElementById("quoteForm");
+      var bookingForm = document.getElementById("bookingForm");
 
       async function handleQuoteSubmit(event) {
         event.preventDefault();
         var status = document.getElementById("quote-form-status");
 
         // VALIDATE FORM FIRST
-        if (!validateQuoteForm(quoteForm)) {
+        if (!validateTheForm(quoteForm)) {
           status.innerHTML = "Please fix the errors above";
           status.style.color = "#e74c3c";
           return;
@@ -2540,8 +2542,61 @@
         }
       }
 
+      async function handleBookingSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("booking-form-status");
+
+        // VALIDATE FORM FIRST
+        if (!validateTheForm(bookingForm)) {
+          status.innerHTML = "Please fix the errors above";
+          status.style.color = "#e74c3c";
+          return;
+        }
+
+        var formData = new FormData(event.target);
+
+        // Convert form data to object
+        var data = Object.fromEntries(formData);
+
+        try {
+          const response = await fetch("send-email.php", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+
+          const result = await response.json();
+
+          if (result.success) {
+            status.innerHTML = "Thanks! Your booking is confirmed.";
+            status.style.color = "#4caf50";
+            bookingForm.reset();
+
+            // Show success state
+            bookingForm.style.display = "none";
+            document.getElementById("bookingSuccess").classList.add("show");
+
+            // Close modal after 3 seconds
+            setTimeout(closeBookingModal, 3000);
+
+            status.innerHTML = "";
+          } else {
+            status.innerHTML = result.message || "Error submitting booking";
+            status.style.color = "#e74c3c";
+          }
+        } catch (error) {
+          status.innerHTML = "Error submitting booking: " + error.message;
+          status.style.color = "#e74c3c";
+        }
+      }
+
       if (quoteForm) {
         quoteForm.addEventListener("submit", handleQuoteSubmit);
+      }
+      if (bookingForm) {
+        bookingForm.addEventListener("submit", handleBookingSubmit);
       }
     </script>
   </body>
