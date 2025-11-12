@@ -15,16 +15,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $data = json_decode(file_get_contents('php://input'), true);
     
-    $name = $data['name'] ?? '';
-    $email = $data['email'] ?? '';
-    $phone = $data['phone'] ?? '';
-    $service = $data['service'] ?? '';
-    $bedrooms = $data['bedrooms'] ?? '';
-    $bathrooms = $data['bathrooms'] ?? '';
-    $frequency = $data['frequency'] ?? '';
-    $preferred_date = $data['preferred_date'] ?? '';
+    $type = $data['type'] ?? 'Quote';
 
-    $message = "New Quote Request\n";
+    if ($type === "Quote") {
+        $name = $data['name'] ?? '';
+        $email = $data['email'] ?? '';
+        $phone = $data['phone'] ?? '';
+        $service = $data['service'] ?? '';
+        $bedrooms = $data['bedrooms'] ?? '';
+        $bathrooms = $data['bathrooms'] ?? '';
+        $frequency = $data['frequency'] ?? '';
+        $preferred_date = $data['preferred_date'] ?? '';
+        $notes = '';
+        $message = "New Quote Request\n";
+    } else {
+         // Booking form
+        $name = $data['book_name'] ?? '';
+        $email = $data['book_email'] ?? '';
+        $phone = $data['book_phone'] ?? '';
+        $service = $data['book_service'] ?? '';
+        $bedrooms = $data['book_bedrooms'] ?? '';
+        $bathrooms = $data['book_bathrooms'] ?? '';
+        $frequency = $data['book_frequency'] ?? '';
+        $preferred_date = $data['book_date'] ?? '';
+        $notes = $data['book_notes'] ?? '';        
+        $message = "New Appointment Request\n";  
+    }
+
     $message .= "==========================================\n\n";
     $message .= "Name: $name\n";
     $message .= "Email: $email\n";
@@ -34,6 +51,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Restrooms: $bathrooms\n";
     $message .= "Frequency: $frequency\n";
     $message .= "Preferred Date: $preferred_date\n";
+    if (!empty($notes)) {
+        $message .= "Notes: $notes\n";
+    }
     $message .= "\n==========================================\n";
 
     $to = "jamesc2128@gmail.com";

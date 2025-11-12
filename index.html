@@ -22,6 +22,12 @@
 
     <!-- Open Graph -->
     <meta
+      property="og:image"
+      content="https://spotlesssolutionsnyc.com/assets/spotlesssolutionslogo.jpeg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
       property="og:title"
       content="Spotless Solutions | NYC Cleaning Service"
     />
@@ -1953,13 +1959,13 @@
         <form id="bookingForm">
           <div class="form-group">
             <label for="bookName">Full Name *</label>
-            <input type="text" id="bookName" required />
+            <input type="text" id="bookName" name="book_name" required />
             <div class="error-message"></div>
           </div>
 
           <div class="form-group">
             <label for="bookService">Service Needed *</label>
-            <select id="bookService" required>
+            <select id="bookService" name="book_service" required>
               <option value="">Select a service...</option>
               <option value="Office & Facility Cleaning">
                 Office & Facility Cleaning
@@ -1983,7 +1989,7 @@
           <div class="form-row">
             <div class="form-group">
               <label for="bookBedrooms">Rooms *</label>
-              <select id="bookBedrooms" required>
+              <select id="bookBedrooms" name="book_bedrooms" required>
                 <option value="">Select...</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -1996,7 +2002,7 @@
 
             <div class="form-group">
               <label for="bookBathrooms">Restrooms *</label>
-              <select id="bookBathrooms" required>
+              <select id="bookBathrooms" name="book_bathrooms" required>
                 <option value="">Select...</option>
                 <option value="1">1</option>
                 <option value="1.5">1.5</option>
@@ -2011,7 +2017,7 @@
 
           <div class="form-group">
             <label for="bookFrequency">Frequency *</label>
-            <select id="bookFrequency" required>
+            <select id="bookFrequency" name="book_frequency" required>
               <option value="">Select...</option>
               <option value="One-time">One-time</option>
               <option value="Weekly">Weekly</option>
@@ -2023,7 +2029,7 @@
 
           <div class="form-group">
             <label for="bookDate">Preferred Date *</label>
-            <input type="date" id="bookDate" required />
+            <input type="date" id="bookDate" name="book_date" required />
             <div class="error-message"></div>
           </div>
 
@@ -2032,6 +2038,7 @@
             <input
               type="tel"
               id="bookPhone"
+              name="book_phone"
               placeholder="(555) 123-4567"
               required
             />
@@ -2040,7 +2047,7 @@
 
           <div class="form-group">
             <label for="bookEmail">Email *</label>
-            <input type="email" id="bookEmail" required />
+            <input type="email" id="bookEmail" name="book_email" required />
             <div class="error-message"></div>
           </div>
 
@@ -2048,6 +2055,7 @@
             <label for="bookNotes">Additional Notes (optional)</label>
             <textarea
               id="bookNotes"
+              name="book_notes"
               placeholder="Tell us about your home or any special requests..."
             ></textarea>
           </div>
@@ -2367,28 +2375,49 @@
       }
 
       // Validation helper function
-      function validateTheForm(formElement) {
+      function validateTheForm(formElement, type) {
         let isValid = true;
+        var nameInput;
+        var serviceInput;
+        var bedroomsInput;
+        var bathroomsInput;
+        var frequencyInput;
+        var dateInput;
+        var phoneInput;
+        var emailInput;
 
+        if (type == "quote") {
+          nameInput = formElement.querySelector('input[name="name"]');
+          serviceInput = formElement.querySelector('select[name="service"]');
+          bedroomsInput = formElement.querySelector('select[name="bedrooms"]');
+          bathroomsInput = formElement.querySelector(
+            'select[name="bathrooms"]'
+          );
+          frequencyInput = formElement.querySelector(
+            'select[name="frequency"]'
+          );
+          dateInput = formElement.querySelector('input[name="preferred_date"]');
+          phoneInput = formElement.querySelector('input[name="phone"]');
+          emailInput = formElement.querySelector('input[name="email"]');
+        } else {
+          nameInput = formElement.querySelector('input[name="book_name"]');
+          serviceInput = formElement.querySelector(
+            'select[name="book_service"]'
+          );
+          bedroomsInput = formElement.querySelector(
+            'select[name="book_bedrooms"]'
+          );
+          bathroomsInput = formElement.querySelector(
+            'select[name="book_bathrooms"]'
+          );
+          frequencyInput = formElement.querySelector(
+            'select[name="book_frequency"]'
+          );
+          dateInput = formElement.querySelector('input[name="book_date"]');
+          phoneInput = formElement.querySelector('input[name="book_phone"]');
+          emailInput = formElement.querySelector('input[name="book_email"]');
+        }
         // Get all form inputs
-        const nameInput = formElement.querySelector('input[name="name"]');
-        const serviceInput = formElement.querySelector(
-          'select[name="service"]'
-        );
-        const bedroomsInput = formElement.querySelector(
-          'select[name="bedrooms"]'
-        );
-        const bathroomsInput = formElement.querySelector(
-          'select[name="bathrooms"]'
-        );
-        const frequencyInput = formElement.querySelector(
-          'select[name="frequency"]'
-        );
-        const dateInput = formElement.querySelector(
-          'input[name="preferred_date"]'
-        );
-        const phoneInput = formElement.querySelector('input[name="phone"]');
-        const emailInput = formElement.querySelector('input[name="email"]');
 
         // Validate Name
         if (!nameInput.value.trim()) {
@@ -2498,12 +2527,15 @@
         var status = document.getElementById("quote-form-status");
 
         // VALIDATE FORM FIRST
-        if (!validateTheForm(quoteForm)) {
+        if (!validateTheForm(quoteForm, "quote")) {
           status.innerHTML = "Please fix the errors above";
           status.style.color = "#e74c3c";
           return;
         }
         var formData = new FormData(event.target);
+
+        // Add dynamic property to FormData
+        formData.append("type", "Quote");
 
         // Convert form data to object
         var data = Object.fromEntries(formData);
@@ -2547,13 +2579,16 @@
         var status = document.getElementById("booking-form-status");
 
         // VALIDATE FORM FIRST
-        if (!validateTheForm(bookingForm)) {
+        if (!validateTheForm(bookingForm, "appt")) {
           status.innerHTML = "Please fix the errors above";
           status.style.color = "#e74c3c";
           return;
         }
 
         var formData = new FormData(event.target);
+
+        // Add dynamic property to FormData
+        formData.append("type", "Appointment");
 
         // Convert form data to object
         var data = Object.fromEntries(formData);
