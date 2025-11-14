@@ -51,12 +51,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Restrooms: $bathrooms\n";
     $message .= "Frequency: $frequency\n";
     $message .= "Preferred Date: $preferred_date\n";
+    $message .= "Type: $type\n";
     if (!empty($notes)) {
         $message .= "Notes: $notes\n";
     }
     $message .= "\n==========================================\n";
 
-    $to = "jamesc2128@gmail.com";
+    $to = "info@spotlesssolutionsnyc.com";
     $subject = "New Quote Request from $name";
 
     $headers = "From: SpotlessSolutionsNYC@spotlesssolutionsnyc.com\r\n";
