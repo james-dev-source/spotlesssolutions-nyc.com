@@ -4,36 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Spotless Solutions | NYC Cleaning & Maid Service — Book Online
+      Spotless Solutions | Commercial & Residential Cleaning — NYC & NJ
     </title>
     <meta
       name="description"
-      content="NYC's trusted cleaning service for homes & offices. Fast online booking, transparent quotes, and five-star pros."
+      content="Professional commercial and residential cleaning in Manhattan, Queens, Brooklyn, Bronx, and New Jersey. Offices, kitchens, bars, houses, and apartments. Request a free quote today."
     />
-    <meta name="theme-color" content="#1ba098" />
+    <meta name="theme-color" content="#1CB1FD" />
 
     <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/jpeg"
-      href="/assets/spotlesssolutionslogoV2.jpg"
-    />
-    <link rel="apple-touch-icon" href="/assets/spotlesssolutionslogoV2.jpg" />
+    <link rel="icon" type="image/jpeg" href="/assets/favicon.jpg" />
+    <link rel="apple-touch-icon" href="/assets/favicon.jpg" />
 
     <!-- Open Graph -->
     <meta
       property="og:image"
-      content="https://spotlesssolutionsnyc.com/assets/spotlesssolutionslogoV2.jpeg"
+      content="https://spotlesssolutionsnyc.com/assets/spotlesssolutionslogoV2.jpg"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta
       property="og:title"
-      content="Spotless Solutions | NYC Cleaning Service"
+      content="Spotless Solutions | Commercial & Residential Cleaning"
     />
     <meta
       property="og:description"
-      content="Book your NYC cleaning appointment online. Trusted residential & office cleaning."
+      content="Professional cleaning for your business and your home. Commercial and residential services across NYC and New Jersey."
     />
     <meta property="og:type" content="business.business" />
     <meta property="og:url" content="https://spotlesssolutions.com" />
@@ -46,7 +42,8 @@
         "name": "Spotless Solutions",
         "url": "https://spotlesssolutions.com",
         "email": "info@spotlesssolutionsnyc.com",
-        "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Crect width='1024' height='1024' fill='%23f5f9f8'/%3E%3Ccircle cx='512' cy='320' r='180' fill='%235bc0b8' opacity='0.6'/%3E%3Ccircle cx='512' cy='320' r='150' fill='%231ba098'/%3E%3Ccircle cx='400' cy='250' r='40' fill='%235bc0b8'/%3E%3Ccircle cx='350' cy='350' r='60' fill='%235bc0b8' opacity='0.7'/%3E%3Cpath d='M650,200 Q700,250 680,320 Q650,380 580,380 Q550,380 530,350' fill='none' stroke='white' stroke-width='30' stroke-linecap='round'/%3E%3Cpath d='M680,180 L750,120 L720,180 Z M750,120 L800,100 L760,150 Z' fill='%234caf50'/%3E%3Cpath d='M800,280 L860,220 L830,280 Z M860,220 L900,200 L870,250 Z' fill='%234caf50'/%3E%3Ctext x='512' y='720' font-family='Arial' font-size='120' font-weight='bold' text-anchor='middle' fill='%231ba098'%3ESPOTLESS%3C/text%3E%3Ctext x='512' y='880' font-family='Arial' font-size='120' font-weight='bold' text-anchor='middle' fill='%234caf50'%3ESOLUTIONS%3C/text%3E%3C/svg%3E",
+        "telephone": "+1-917-983-0177",
+        "image": "https://spotlesssolutionsnyc.com/assets/spotlesssolutionslogoV2.jpg",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "New York",
@@ -59,10 +56,10 @@
         },
         "areaServed": [
           "Manhattan",
-          "Brooklyn",
           "Queens",
+          "Brooklyn",
           "Bronx",
-          "Staten Island"
+          "New Jersey"
         ],
         "priceRange": "$$",
         "aggregateRating": {
@@ -81,18 +78,21 @@
       }
 
       :root {
-        --primary-teal: #1ba098;
-        --primary-teal-dark: #0d7570;
-        --primary-teal-light: #5bc0b8;
-        --secondary-green: #4caf50;
-        --secondary-green-dark: #388e3c;
-        --text-dark: #2c3e50;
-        --text-light: #7f8c8d;
-        --bg-light: #f5f9f8;
+        --accent-blue: #1cb1fd;
+        --accent-blue-dark: #0a9ae0;
+        --accent-blue-light: #5dd4ff;
+        --accent-green: #80cc28;
+        --accent-green-dark: #6bb022;
+        --gray: #4b5563;
+        --white: #ffffff;
+        --black: #111827;
+        --text-dark: #111827;
+        --text-light: #4b5563;
+        --bg-light: #f9fafb;
         --bg-white: #ffffff;
-        --border-light: #e0e8e7;
-        --accent-light: #e3f2f1;
-        --success: #4caf50;
+        --border-light: #e5e7eb;
+        --accent-light: rgba(28, 177, 253, 0.08);
+        --success: #80cc28;
         --error: #e74c3c;
       }
 
@@ -125,7 +125,7 @@
       h2 {
         font-size: clamp(1.75rem, 4vw, 2.5rem);
         margin-bottom: 0.5rem;
-        color: var(--primary-teal);
+        color: var(--accent-blue);
       }
 
       h3 {
@@ -141,13 +141,13 @@
       }
 
       a {
-        color: var(--primary-teal);
+        color: var(--accent-blue);
         text-decoration: none;
         transition: color 0.3s ease;
       }
 
       a:hover {
-        color: var(--primary-teal-dark);
+        color: var(--accent-blue-dark);
       }
 
       /* Buttons */
@@ -167,36 +167,36 @@
       }
 
       .btn-primary {
-        background-color: var(--primary-teal);
+        background-color: var(--accent-blue);
         color: white;
       }
 
       .btn-primary:hover {
-        background-color: var(--primary-teal-dark);
+        background-color: var(--accent-blue-dark);
         transform: translateY(-2px);
-        box-shadow: 0 8px 16px rgba(27, 160, 152, 0.2);
+        box-shadow: 0 8px 16px rgba(28, 177, 253, 0.2);
       }
 
       .btn-secondary {
         background-color: transparent;
-        color: var(--primary-teal);
-        border: 2px solid var(--primary-teal);
+        color: var(--accent-blue);
+        border: 2px solid var(--accent-blue);
       }
 
       .btn-secondary:hover {
         background-color: var(--accent-light);
-        border-color: var(--primary-teal-dark);
+        border-color: var(--accent-blue-dark);
       }
 
       .btn-green {
-        background-color: var(--secondary-green);
+        background-color: var(--accent-green);
         color: white;
       }
 
       .btn-green:hover {
-        background-color: var(--secondary-green-dark);
+        background-color: var(--accent-green-dark);
         transform: translateY(-2px);
-        box-shadow: 0 8px 16px rgba(76, 175, 80, 0.2);
+        box-shadow: 0 8px 16px rgba(128, 204, 40, 0.2);
       }
 
       .btn:disabled {
@@ -232,29 +232,22 @@
         gap: 0.75rem;
         font-size: 1.3rem;
         font-weight: 700;
-        color: var(--primary-teal);
+        color: var(--accent-blue);
       }
 
       .logo-mark {
-        /*width: 80px;*/
-        height: 100px;
-        border-radius: 50%;
+        height: 52px;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.2rem;
-        background-size: contain;
-        background-position: center;
-        overflow: hidden;
         flex-shrink: 0;
         cursor: pointer;
       }
 
       .logo-mark img {
-        /*width: 90%;*/
         height: 100%;
+        width: auto;
         object-fit: contain;
-        /*padding: 2px;*/
       }
 
       .logo {
@@ -263,7 +256,7 @@
         gap: 0.75rem;
         font-size: 1.3rem;
         font-weight: 700;
-        color: var(--primary-teal);
+        color: var(--accent-blue);
         cursor: pointer;
       }
 
@@ -279,14 +272,14 @@
         border-radius: 16px;
         overflow: hidden;
         height: 250px;
-        box-shadow: 0 4px 12px rgba(27, 160, 152, 0.1);
+        box-shadow: 0 4px 12px rgba(28, 177, 253, 0.1);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         position: relative;
       }
 
       .gallery-item:hover {
         transform: translateY(-4px);
-        box-shadow: 0 8px 20px rgba(27, 160, 152, 0.15);
+        box-shadow: 0 8px 20px rgba(28, 177, 253, 0.15);
       }
 
       .gallery-item img {
@@ -324,7 +317,7 @@
       }
 
       nav a:hover {
-        color: var(--primary-teal);
+        color: var(--accent-blue);
       }
 
       .header-ctas {
@@ -339,7 +332,7 @@
         border: none;
         font-size: 1.5rem;
         cursor: pointer;
-        color: var(--primary-teal);
+        color: var(--accent-blue);
         padding: 0.5rem;
         z-index: 1001;
       }
@@ -376,7 +369,7 @@
 
       .mobile-nav a:hover {
         background-color: var(--accent-light);
-        color: var(--primary-teal);
+        color: var(--accent-blue);
       }
 
       .mobile-nav a:last-child {
@@ -385,7 +378,7 @@
 
       /* Hero Section */
       .hero {
-        background: linear-gradient(135deg, var(--bg-light) 0%, #f0fffe 100%);
+        background: linear-gradient(135deg, var(--bg-light) 0%, #f0f9ff 100%);
         padding: 80px 1.5rem 60px;
         position: relative;
         overflow: hidden;
@@ -397,7 +390,7 @@
         position: absolute;
         width: 300px;
         height: 300px;
-        background: rgba(27, 160, 152, 0.05);
+        background: rgba(28, 177, 253, 0.05);
         border-radius: 50%;
         top: -100px;
         right: -50px;
@@ -408,7 +401,7 @@
         position: absolute;
         width: 200px;
         height: 200px;
-        background: rgba(76, 175, 80, 0.03);
+        background: rgba(128, 204, 40, 0.05);
         border-radius: 50%;
         bottom: -50px;
         left: 50px;
@@ -427,7 +420,7 @@
       }
 
       .hero .highlight {
-        color: var(--primary-teal);
+        color: var(--accent-blue);
       }
 
       .hero-subheader {
@@ -456,7 +449,7 @@
 
       .trust-badge::before {
         content: "✓";
-        color: var(--secondary-green);
+        color: var(--accent-green);
         font-weight: bold;
         font-size: 1.2rem;
       }
@@ -499,8 +492,8 @@
 
       .service-card:hover {
         transform: translateY(-8px);
-        box-shadow: 0 16px 32px rgba(27, 160, 152, 0.1);
-        border-color: var(--primary-teal-light);
+        box-shadow: 0 16px 32px rgba(28, 177, 253, 0.1);
+        border-color: var(--accent-blue-light);
       }
 
       .service-icon {
@@ -520,7 +513,7 @@
       }
 
       .service-price {
-        color: var(--primary-teal);
+        color: var(--accent-blue);
         font-weight: 700;
         font-size: 1.1rem;
         margin-bottom: 1.5rem;
@@ -550,7 +543,7 @@
         top: 50%;
         transform: translateY(-50%);
         font-size: 2rem;
-        color: var(--primary-teal-light);
+        color: var(--accent-blue-light);
       }
 
       .step:last-child::after {
@@ -565,8 +558,8 @@
         height: 60px;
         background: linear-gradient(
           135deg,
-          var(--primary-teal) 0%,
-          var(--primary-teal-light) 100%
+          var(--accent-blue) 0%,
+          var(--accent-blue-light) 100%
         );
         color: white;
         border-radius: 50%;
@@ -630,7 +623,7 @@
 
       .pricing-card:hover {
         transform: translateY(-8px);
-        box-shadow: 0 16px 32px rgba(27, 160, 152, 0.1);
+        box-shadow: 0 16px 32px rgba(28, 177, 253, 0.1);
       }
 
       .pricing-title {
@@ -670,7 +663,7 @@
       }
 
       .testimonial:hover {
-        box-shadow: 0 8px 16px rgba(27, 160, 152, 0.1);
+        box-shadow: 0 8px 16px rgba(28, 177, 253, 0.1);
       }
 
       .stars {
@@ -749,12 +742,12 @@
       }
 
       .faq-question:hover {
-        color: var(--primary-teal);
+        color: var(--accent-blue);
       }
 
       .faq-toggle {
         font-size: 1.3rem;
-        color: var(--primary-teal);
+        color: var(--accent-blue);
         transition: transform 0.3s ease;
       }
 
@@ -891,8 +884,8 @@
       select:focus,
       textarea:focus {
         outline: none;
-        border-color: var(--primary-teal);
-        box-shadow: 0 0 0 3px rgba(27, 160, 152, 0.1);
+        border-color: var(--accent-blue);
+        box-shadow: 0 0 0 3px rgba(28, 177, 253, 0.1);
       }
 
       input.error,
@@ -957,8 +950,8 @@
       .contact-card {
         background: linear-gradient(
           135deg,
-          var(--primary-teal) 0%,
-          var(--primary-teal-light) 100%
+          var(--accent-blue) 0%,
+          var(--accent-blue-light) 100%
         );
         border-radius: 20px;
         padding: 2rem;
@@ -995,7 +988,7 @@
 
       .btn-white {
         background-color: white;
-        color: var(--primary-teal);
+        color: var(--accent-blue);
       }
 
       .btn-white:hover {
@@ -1003,9 +996,177 @@
         transform: translateY(-2px);
       }
 
+      /* Promo Banner */
+      .promo-banner {
+        background: linear-gradient(
+          135deg,
+          var(--accent-green) 0%,
+          var(--accent-blue) 100%
+        );
+        color: var(--white);
+        padding: 1.25rem 1.5rem;
+        text-align: center;
+      }
+
+      .promo-banner .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .promo-banner p {
+        color: var(--white);
+        margin: 0;
+        font-weight: 500;
+        font-size: 1rem;
+      }
+
+      .promo-banner .promo-placeholder {
+        font-size: 0.85rem;
+        opacity: 0.9;
+      }
+
+      .promo-banner .btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.9rem;
+      }
+
+      /* Woman-Owned Badge */
+      .woman-owned-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--accent-light);
+        color: var(--text-dark);
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        border: 1px solid rgba(28, 177, 253, 0.2);
+        margin-top: 1rem;
+      }
+
+      .woman-owned-badge::before {
+        content: "♀";
+        color: var(--accent-blue);
+        font-size: 1.1rem;
+      }
+
+      /* Section Intro */
+      .section-intro {
+        text-align: center;
+        color: var(--text-light);
+        max-width: 720px;
+        margin: 0 auto 2rem;
+        font-size: 1.05rem;
+      }
+
+      /* Service Category Headers */
+      .service-category {
+        margin-bottom: 2.5rem;
+      }
+
+      .service-category h3 {
+        color: var(--accent-blue);
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+
+      .service-category .category-desc {
+        text-align: center;
+        color: var(--text-light);
+        margin-bottom: 1.5rem;
+        font-size: 0.95rem;
+      }
+
+      /* About / Trust Section */
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+        margin-top: 2rem;
+      }
+
+      .about-content h3 {
+        color: var(--text-dark);
+        margin-bottom: 1rem;
+      }
+
+      .about-content p {
+        color: var(--text-light);
+      }
+
+      .about-highlights {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      .about-highlight {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding: 1rem;
+        background: var(--bg-white);
+        border-radius: 12px;
+        border: 1px solid var(--border-light);
+      }
+
+      .about-highlight-icon {
+        color: var(--accent-green);
+        font-size: 1.25rem;
+        flex-shrink: 0;
+      }
+
+      .about-highlight strong {
+        display: block;
+        color: var(--text-dark);
+        font-size: 0.95rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .about-highlight span {
+        color: var(--text-light);
+        font-size: 0.85rem;
+      }
+
+      .header-phone {
+        font-weight: 600;
+        color: var(--text-dark);
+        font-size: 0.9rem;
+        white-space: nowrap;
+      }
+
+      .header-phone:hover {
+        color: var(--accent-blue);
+      }
+
+      .contact-phone {
+        color: var(--white);
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: block;
+        margin: 0.75rem 0;
+      }
+
+      .contact-phone:hover {
+        text-decoration: underline;
+      }
+
+      .footer-logo img {
+        height: 48px;
+        width: auto;
+        object-fit: contain;
+      }
+
       /* Footer */
       footer {
-        background-color: var(--text-dark);
+        background-color: var(--black);
         color: white;
         padding: 3rem 1.5rem;
         margin-top: 0;
@@ -1051,7 +1212,7 @@
       }
 
       .footer-section a:hover {
-        color: var(--primary-teal-light);
+        color: var(--accent-blue-light);
       }
 
       .footer-bottom {
@@ -1067,7 +1228,7 @@
         align-items: center;
         gap: 0.5rem;
         font-weight: 700;
-        color: var(--primary-teal-light);
+        color: var(--accent-blue-light);
       }
 
       /* Animations */
@@ -1183,9 +1344,24 @@
         }
 
         .logo-mark {
-          width: 35px;
-          height: 35px;
-          font-size: 1rem;
+          height: 40px;
+        }
+
+        .about-grid {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .about-highlights {
+          grid-template-columns: 1fr;
+        }
+
+        .header-phone {
+          display: none;
+        }
+
+        .promo-banner .container {
+          flex-direction: column;
         }
 
         h1 {
@@ -1237,18 +1413,20 @@
         </div>
         <nav>
           <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#areas">Service Areas</a>
           <a href="#how-it-works">How It Works</a>
-          <a href="#pricing">Pricing</a>
           <a href="#reviews">Reviews</a>
           <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
         </nav>
         <div class="header-ctas">
-          <button class="btn btn-primary" onclick="openBookingModal()">
-            Book Appointment
+          <a href="tel:9179830177" class="header-phone">917-983-0177</a>
+          <button class="btn btn-primary" onclick="openQuoteModal()">
+            Get a Free Quote
           </button>
-          <button class="btn btn-secondary" onclick="openQuoteModal()">
-            Get a Quote
+          <button class="btn btn-secondary" onclick="openBookingModal()">
+            Schedule Cleaning
           </button>
         </div>
         <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
@@ -1257,38 +1435,56 @@
     <!-- Mobile Navigation -->
     <nav class="mobile-nav" id="mobileNav">
       <a href="#services" onclick="closeMobileMenu()">Services</a>
+      <a href="#about" onclick="closeMobileMenu()">About</a>
+      <a href="#areas" onclick="closeMobileMenu()">Service Areas</a>
       <a href="#how-it-works" onclick="closeMobileMenu()">How It Works</a>
-      <a href="#pricing" onclick="closeMobileMenu()">Pricing</a>
       <a href="#reviews" onclick="closeMobileMenu()">Reviews</a>
       <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+      <a href="tel:9179830177" onclick="closeMobileMenu()">Call 917-983-0177</a>
       <a href="#contact" onclick="closeMobileMenu()">Contact</a>
     </nav>
+
+    <!-- Promotions Banner (update content for campaigns) -->
+    <div class="promo-banner" id="promotions">
+      <div class="container">
+        <p>
+          <strong>Residential Cleaning Specials</strong> — Ask about our
+          house &amp; apartment cleaning promotions.
+        </p>
+        <button class="btn btn-white" onclick="openQuoteModal()">
+          Request a Quote
+        </button>
+      </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
         <h1>
-          Spotless Solutions NYC<br />
-          <span class="highlight">Commercial Cleaning. Elevated.</span>
+          Professional Cleaning for<br />
+          <span class="highlight">Your Business &amp; Your Home</span>
         </h1>
         <p class="hero-subheader">
-          Reliable, eco-friendly, and detail-driven commercial cleaning services
-          across NYC. From offices to medical suites — we keep your business
-          spotless, safe, and ready for success.
-          <a href="tel:9179830177">Call us: (917) 983-0177</a>
+          Spotless Solutions delivers commercial and residential cleaning across
+          Manhattan, Queens, Brooklyn, the Bronx, and New Jersey. From offices,
+          kitchens, bars, and lounges to houses and apartments — our trained
+          professionals use the right products for every surface, every time.
+          <a href="tel:9179830177">Call 917-983-0177</a>
         </p>
         <div class="hero-buttons">
-          <button class="btn btn-primary btn-lg" onclick="openBookingModal()">
-            Book Appointment
+          <button class="btn btn-primary btn-lg" onclick="openQuoteModal()">
+            Get a Free Quote
           </button>
-          <button class="btn btn-secondary" onclick="openQuoteModal()">
-            Request a Quote
+          <button class="btn btn-green" onclick="openBookingModal()">
+            Schedule Cleaning
           </button>
+          <a href="tel:9179830177" class="btn btn-secondary">Call Today</a>
         </div>
         <div class="trust-badge">
-          Certified & insured • Eco-friendly products • Consistent trained staff
-          • 100% satisfaction
+          Trained professionals • Professional-grade products • Reliable service
+          • Attention to detail
         </div>
+        <div class="woman-owned-badge">Woman-Owned Business</div>
       </div>
     </section>
 
@@ -1296,6 +1492,10 @@
     <section class="alt-bg">
       <div class="container">
         <h2>See the Spotless Difference</h2>
+        <p class="section-intro">
+          Professional cleaning for offices, commercial kitchens, bars, lounges,
+          and more — delivered with attention to every detail.
+        </p>
         <div class="gallery-grid">
           <div class="gallery-item">
             <img src="./assets/office1.jpg" alt="Office Spaces" />
@@ -1306,7 +1506,7 @@
             <div class="gallery-item-label">Commercial Kitchens</div>
           </div>
           <div class="gallery-item">
-            <img src="./assets/bar.jpg"" alt="Clean Bar areas">
+            <img src="./assets/bar.jpg" alt="Clean bar and lounge areas" />
             <div class="gallery-item-label">Bar & Lounge Spaces</div>
           </div>
         </div>
@@ -1316,91 +1516,199 @@
     <!-- Services Section -->
     <section id="services" class="alt-bg">
       <div class="container">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">🏢</div>
-            <h3>Office & Facility Cleaning</h3>
-            <p>
-              Routine janitorial service for offices, clinics, and retail
-              spaces. Includes dusting, floor care, restroom sanitation, trash
-              removal, and high-touch disinfection to maintain a healthy
-              workspace.
-            </p>
-            <div class="service-price">Contact us for a quote</div>
-            <button class="btn btn-green" onclick="openQuoteModal()">
-              Request Quote
-            </button>
-          </div>
+        <h2>Commercial &amp; Residential Cleaning Services</h2>
+        <p class="section-intro">
+          Whether you need professional cleaning for your business or your home,
+          Spotless Solutions has the trained team, experience, and products to
+          handle the job properly.
+        </p>
 
-          <div class="service-card">
-            <div class="service-icon">🧽</div>
-            <h3>Deep Cleaning & Disinfection</h3>
-            <p>
-              Intensive top-to-bottom service using hospital-grade, eco-friendly
-              products. Ideal for quarterly deep cleans, compliance sanitation,
-              or post-event resets.
-            </p>
-            <div class="service-price">Contact us for a quote</div>
-            <button class="btn btn-green" onclick="openQuoteModal()">
-              Request Quote
-            </button>
-          </div>
+        <div class="service-category">
+          <h3>Commercial Cleaning</h3>
+          <p class="category-desc">
+            Professional cleaning for offices, kitchens, bars, lounges, and
+            commercial spaces — delivered by trained cleaning professionals.
+          </p>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">🏢</div>
+              <h3>Office Cleaning</h3>
+              <p>
+                Routine janitorial service for offices and professional spaces.
+                Dusting, floor care, restroom sanitation, trash removal, and
+                high-touch disinfection to keep your workspace clean and
+                presentable.
+              </p>
+              <div class="service-price">Contact us for a quote</div>
+              <button class="btn btn-green" onclick="openQuoteModal()">
+                Request Quote
+              </button>
+            </div>
 
-          <div class="service-card">
-            <div class="service-icon">🗓️</div>
-            <h3>Recurring Commercial Contracts</h3>
-            <p>
-              Structured cleaning agreements that ensure consistent quality and
-              staff assignment. Perfect for offices, medical facilities, and
-              managed properties seeking long-term reliability.
-            </p>
-            <div class="service-price">Contact us for a quote</div>
-            <button class="btn btn-green" onclick="openQuoteModal()">
-              Get Proposal
-            </button>
-          </div>
+            <div class="service-card">
+              <div class="service-icon">🍳</div>
+              <h3>Commercial Kitchen Cleaning</h3>
+              <p>
+                Deep cleaning for commercial kitchens with proper products and
+                techniques for food-prep surfaces, equipment, floors, and
+                high-traffic areas. Experience with different surfaces and
+                environments.
+              </p>
+              <div class="service-price">Contact us for a quote</div>
+              <button class="btn btn-green" onclick="openQuoteModal()">
+                Request Quote
+              </button>
+            </div>
 
-          <div class="service-card">
-            <div class="service-icon">🏗️</div>
-            <h3>Post-Construction Cleanup</h3>
-            <p>
-              Full removal of dust, debris, and residue after renovations or new
-              builds. Includes surface polishing, vacuuming, and sanitizing to
-              make your space ready for occupancy.
-            </p>
-            <div class="service-price">Custom Quote</div>
-            <button class="btn btn-green" onclick="openQuoteModal()">
-              Request Quote
-            </button>
-          </div>
+            <div class="service-card">
+              <div class="service-icon">🍸</div>
+              <h3>Bar &amp; Lounge Cleaning</h3>
+              <p>
+                Professional cleaning for bars, lounges, and hospitality spaces.
+                We handle bar tops, seating areas, restrooms, floors, and
+                high-touch surfaces with reliable, detail-oriented service.
+              </p>
+              <div class="service-price">Contact us for a quote</div>
+              <button class="btn btn-green" onclick="openQuoteModal()">
+                Request Quote
+              </button>
+            </div>
 
-          <div class="service-card">
-            <div class="service-icon">🚚</div>
-            <h3>Move-In / Move-Out Cleaning</h3>
-            <p>
-              Designed for commercial relocations or property handovers.
-              Includes full disinfection, floor care, and kitchen/restroom
-              sanitation.
-            </p>
-            <div class="service-price">Custom Quote</div>
-            <button class="btn btn-green" onclick="openQuoteModal()">
-              Request Quote
-            </button>
-          </div>
+            <div class="service-card">
+              <div class="service-icon">🗓️</div>
+              <h3>Recurring Commercial Contracts</h3>
+              <p>
+                Structured cleaning agreements with consistent staff and
+                schedules. Perfect for offices, restaurants, bars, and commercial
+                properties that need dependable, long-term cleaning.
+              </p>
+              <div class="service-price">Contact us for a quote</div>
+              <button class="btn btn-green" onclick="openQuoteModal()">
+                Get Proposal
+              </button>
+            </div>
 
-          <div class="service-card">
-            <div class="service-icon">🌿</div>
-            <h3>Eco-Friendly Product Program</h3>
-            <p>
-              We use non-toxic, environmentally safe cleaning solutions in every
-              service. Available as a dedicated “Green Clean” package for
-              sustainability-minded clients.
-            </p>
-            <div class="service-price">Included with all packages</div>
-            <button class="btn btn-green" onclick="openQuoteModal()">
-              Learn More
-            </button>
+            <div class="service-card">
+              <div class="service-icon">🧽</div>
+              <h3>Deep Cleaning &amp; Disinfection</h3>
+              <p>
+                Intensive top-to-bottom commercial cleaning using
+                professional-grade products. Ideal for periodic deep cleans,
+                compliance sanitation, or post-event resets.
+              </p>
+              <div class="service-price">Contact us for a quote</div>
+              <button class="btn btn-green" onclick="openQuoteModal()">
+                Request Quote
+              </button>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">🏗️</div>
+              <h3>Post-Construction Cleanup</h3>
+              <p>
+                Full removal of dust, debris, and residue after renovations or
+                new builds. Surface polishing, vacuuming, and sanitizing to make
+                your commercial space ready for business.
+              </p>
+              <div class="service-price">Custom Quote</div>
+              <button class="btn btn-green" onclick="openQuoteModal()">
+                Request Quote
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-category">
+          <h3>Residential Cleaning</h3>
+          <p class="category-desc">
+            Professional house and apartment cleaning for homes that deserve
+            spotless, reliable care — with the same attention to detail we bring
+            to every commercial job.
+          </p>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">🏠</div>
+              <h3>House Cleaning</h3>
+              <p>
+                Regular and one-time house cleaning by trained professionals.
+                Kitchens, bathrooms, bedrooms, living areas, and floors cleaned
+                with proper products for every surface in your home.
+              </p>
+              <div class="service-price">Contact us for a quote</div>
+              <button class="btn btn-primary" onclick="openQuoteModal()">
+                Get a Free Quote
+              </button>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">🏙️</div>
+              <h3>Apartment Cleaning</h3>
+              <p>
+                Flexible apartment cleaning for studios, one-bedrooms, and
+                larger units. Reliable scheduling, professional-grade products,
+                and consistent results you can count on.
+              </p>
+              <div class="service-price">Contact us for a quote</div>
+              <button class="btn btn-primary" onclick="openQuoteModal()">
+                Get a Free Quote
+              </button>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">✨</div>
+              <h3>Deep Home Cleaning</h3>
+              <p>
+                Thorough top-to-bottom residential deep cleaning. Ideal for
+                seasonal refreshes, special occasions, or when your home needs
+                extra attention to detail.
+              </p>
+              <div class="service-price">Contact us for a quote</div>
+              <button class="btn btn-primary" onclick="openQuoteModal()">
+                Request Quote
+              </button>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">🚚</div>
+              <h3>Move-In / Move-Out Cleaning</h3>
+              <p>
+                Complete cleaning for residential moves. Full disinfection, floor
+                care, kitchen and bathroom sanitation — so your home is ready
+                for its next chapter.
+              </p>
+              <div class="service-price">Custom Quote</div>
+              <button class="btn btn-primary" onclick="openQuoteModal()">
+                Request Quote
+              </button>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">🔄</div>
+              <h3>Recurring Home Cleaning</h3>
+              <p>
+                Weekly, bi-weekly, or monthly home cleaning on a schedule that
+                works for you. Same trusted team, reliable processes, and
+                consistent spotless results.
+              </p>
+              <div class="service-price">Contact us for a quote</div>
+              <button class="btn btn-primary" onclick="openQuoteModal()">
+                Schedule Cleaning
+              </button>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">🌿</div>
+              <h3>Eco-Friendly Cleaning</h3>
+              <p>
+                Non-toxic, environmentally safe cleaning solutions for homes
+                and businesses. Professional results without harsh chemicals —
+                included with all our services.
+              </p>
+              <div class="service-price">Included with all packages</div>
+              <button class="btn btn-primary" onclick="openQuoteModal()">
+                Learn More
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -1410,50 +1718,101 @@
     <section id="how-it-works">
       <div class="container">
         <h2>How It Works</h2>
+        <p class="section-intro">
+          Getting professional cleaning for your business or home is simple.
+        </p>
         <div class="how-it-works">
           <div class="step">
             <div class="step-number">1</div>
-            <h3>Book</h3>
-            <p>Select your service, date, and time. Takes just 2 minutes.</p>
+            <h3>Request a Quote</h3>
+            <p>Tell us what you need cleaned, where, and when. Takes just minutes.</p>
           </div>
           <div class="step">
             <div class="step-number">2</div>
             <h3>We Clean</h3>
-            <p>Our vetted pros arrive on time and work their magic.</p>
+            <p>Our trained professionals arrive on time with the right products.</p>
           </div>
           <div class="step">
             <div class="step-number">3</div>
-            <h3>You Relax</h3>
-            <p>Enjoy your pristine space. No hassle, just results.</p>
+            <h3>Enjoy the Results</h3>
+            <p>A spotless space — commercial or residential — done right.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Why Choose Us -->
-    <section class="alt-bg">
+    <!-- About / Why Choose Us -->
+    <section id="about" class="alt-bg">
       <div class="container">
         <h2>Why Choose Spotless Solutions</h2>
-        <div class="why-choose-grid">
-          <div class="why-item">
-            <div class="why-icon">🛡️</div>
-            <h3>Fully Insured</h3>
-            <p>Complete coverage for your peace of mind.</p>
+        <p class="section-intro">
+          Clean. Professional. Modern. Trustworthy. We bring trained
+          professionals, professional-grade products, and reliable cleaning
+          processes to every job — commercial or residential.
+        </p>
+        <div class="about-grid">
+          <div class="about-content">
+            <h3>A Woman-Owned Business You Can Trust</h3>
+            <p>
+              Spotless Solutions is a Woman-Owned Business built on attention to
+              detail, reliable service, and a commitment to doing the job
+              right. Whether we're cleaning your office, kitchen, bar, lounge,
+              house, or apartment — we match the right team, experience, and
+              products to your space.
+            </p>
+            <div class="woman-owned-badge">Woman-Owned Business</div>
+            <div class="about-highlights">
+              <div class="about-highlight">
+                <span class="about-highlight-icon">✓</span>
+                <div>
+                  <strong>Trained Professionals</strong>
+                  <span>Experienced cleaners who know different surfaces and environments</span>
+                </div>
+              </div>
+              <div class="about-highlight">
+                <span class="about-highlight-icon">✓</span>
+                <div>
+                  <strong>Professional-Grade Products</strong>
+                  <span>The right products for commercial and residential spaces</span>
+                </div>
+              </div>
+              <div class="about-highlight">
+                <span class="about-highlight-icon">✓</span>
+                <div>
+                  <strong>Reliable Service</strong>
+                  <span>Consistent schedules and dependable results</span>
+                </div>
+              </div>
+              <div class="about-highlight">
+                <span class="about-highlight-icon">✓</span>
+                <div>
+                  <strong>Attention to Detail</strong>
+                  <span>Every corner, surface, and high-touch area matters</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="why-item">
-            <div class="why-icon">⭐</div>
-            <h3>Vetted Pros</h3>
-            <p>Screened, trained, and background-checked cleaners.</p>
-          </div>
-          <div class="why-item">
-            <div class="why-icon">🌱</div>
-            <h3>Eco-Friendly</h3>
-            <p>Safe, sustainable cleaning products for your family.</p>
-          </div>
-          <div class="why-item">
-            <div class="why-icon">✓</div>
-            <h3>100% Guarantee</h3>
-            <p>Not satisfied? We'll make it right.</p>
+          <div class="why-choose-grid">
+            <div class="why-item">
+              <div class="why-icon">🛡️</div>
+              <h3>Fully Insured</h3>
+              <p>Complete coverage for your peace of mind.</p>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">⭐</div>
+              <h3>Trained Pros</h3>
+              <p>Professional cleaning teams with real experience.</p>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">🌱</div>
+              <h3>Eco-Friendly</h3>
+              <p>Safe, professional products for homes and businesses.</p>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">✓</div>
+              <h3>100% Guarantee</h3>
+              <p>Not satisfied? We'll make it right.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -1463,69 +1822,65 @@
     <section id="areas">
       <div class="container">
         <h2>Service Areas</h2>
-        <p
-          style="
-            text-align: center;
-            color: var(--text-light);
-            margin-bottom: 2rem;
-          "
-        >
-          We serve all five boroughs of New York City
+        <p class="section-intro">
+          Spotless Solutions currently provides commercial and residential
+          cleaning services in Manhattan, Queens, Brooklyn, the Bronx, and
+          New Jersey.
         </p>
         <div class="areas-grid">
           <div class="area-item">Manhattan</div>
-          <div class="area-item">Brooklyn</div>
           <div class="area-item">Queens</div>
+          <div class="area-item">Brooklyn</div>
           <div class="area-item">Bronx</div>
-          <div class="area-item">Staten Island</div>
+          <div class="area-item">New Jersey</div>
         </div>
       </div>
     </section>
     <!-- Pricing -->
     <section id="pricing" class="alt-bg">
       <div class="container">
-        <h2>Transparent Pricing</h2>
+        <h2>Request a Custom Quote</h2>
+        <p class="section-intro">
+          Every space is different. We provide customized quotes for commercial
+          and residential cleaning based on your needs, schedule, and property
+          size.
+        </p>
         <div class="pricing-grid">
           <div class="pricing-card">
-            <div class="pricing-title">Commercial Maintenance Clean</div>
+            <div class="pricing-title">Commercial Maintenance</div>
             <div class="pricing-description">
-              Weekly service designed for offices, retail spaces, and
-              professional facilities. Includes full restroom, kitchen, and
-              high-touch surface cleaning.
+              Regular cleaning for offices, kitchens, bars, lounges, and
+              commercial spaces. Restroom, kitchen, floor care, and high-touch
+              surface cleaning by trained professionals.
             </div>
-            <div class="pricing-note">
-              Contact us for a quote (2 staff, once per week)
-            </div>
+            <div class="pricing-note">Custom quote based on your facility</div>
             <button class="btn btn-primary" onclick="openQuoteModal()">
               Request Quote
             </button>
           </div>
 
           <div class="pricing-card">
-            <div class="pricing-title">Deep Clean & Disinfection</div>
+            <div class="pricing-title">Residential Home Cleaning</div>
             <div class="pricing-description">
-              Comprehensive top-to-bottom cleaning using hospital-grade,
-              eco-friendly disinfectants. Ideal for periodic sanitation,
-              post-construction, or turnover cleaning.
+              House and apartment cleaning on your schedule — one-time, weekly,
+              bi-weekly, or monthly. Professional products and reliable service
+              for every room in your home.
             </div>
-            <div class="pricing-note">
-              Contact us for a quote (4 staff, twice per week)
-            </div>
-            <button class="btn btn-primary" onclick="openQuoteModal()">
-              Request Quote
+            <div class="pricing-note">Ask about residential promotions</div>
+            <button class="btn btn-green" onclick="openQuoteModal()">
+              Get a Free Quote
             </button>
           </div>
 
           <div class="pricing-card">
-            <div class="pricing-title">Monthly Contract Plan</div>
+            <div class="pricing-title">Deep Clean &amp; Special Services</div>
             <div class="pricing-description">
-              Structured ongoing service with consistent staff and schedule.
-              Best for offices or facilities requiring regular upkeep and
-              inspections.
+              Comprehensive deep cleaning, move-in/move-out, post-construction,
+              and disinfection for commercial and residential properties.
             </div>
-            <div class="pricing-note">Contact us for a quote</div>
+            <div class="pricing-note">Contact us for a custom proposal</div>
             <button class="btn btn-primary" onclick="openQuoteModal()">
-              Get a Custom Proposal
+              Contact Us
             </button>
           </div>
         </div>
@@ -1538,11 +1893,9 @@
             font-style: italic;
           "
         >
-          All commercial cleaning quotes are customized to your facility size,
-          frequency, and disinfection level.
-          <br />
-          We use only eco-friendly, non-toxic products — because a spotless
-          space should also be a healthy one.
+          All quotes are customized to your space, frequency, and cleaning
+          needs. We use professional-grade, eco-friendly products — because a
+          spotless space should also be a healthy one.
         </p>
       </div>
     </section>
@@ -1644,11 +1997,11 @@
               <span class="faq-toggle">▼</span>
             </div>
             <div class="faq-answer">
-              We specialize in commercial spaces such as offices, medical &
-              professional suites, retail locations, showrooms, warehouses, and
-              common areas in residential buildings. If your facility requires
-              consistent, high-standard cleaning and disinfection, we can
-              customize a solution for you.
+              We specialize in commercial spaces such as offices, kitchens,
+              bars, lounges, retail locations, and other commercial
+              environments. We also provide residential cleaning for houses and
+              apartments. If your space requires professional, reliable
+              cleaning, we can customize a solution for you.
             </div>
           </div>
 
@@ -1714,13 +2067,28 @@
 
           <div class="faq-item">
             <div class="faq-question" onclick="toggleFAQ(this)">
+              <span>What areas do you serve?</span>
+              <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+              We currently provide commercial and residential cleaning in
+              Manhattan, Queens, Brooklyn, the Bronx, and New Jersey. Contact us
+              at <a href="tel:9179830177">917-983-0177</a> to confirm service
+              availability for your location.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
               <span>Do you offer residential cleaning?</span>
               <span class="faq-toggle">▼</span>
             </div>
             <div class="faq-answer">
-              Our focus is commercial cleaning. For residential, we only provide
-              move-in/move-out and deep cleaning with disinfection, available by
-              request and subject to availability.
+              Yes! We provide full residential cleaning services for houses and
+              apartments — including regular maintenance cleaning, deep cleaning,
+              move-in/move-out, and recurring schedules. Residential cleaning is
+              a major part of what we do, alongside our commercial services.
+              Contact us or request a quote to get started.
             </div>
           </div>
 
@@ -1730,9 +2098,10 @@
               <span class="faq-toggle">▼</span>
             </div>
             <div class="faq-answer">
-              Click "Get a Quote" or "Book Appointment" on this page, share your
-              facility details, preferred schedule, and scope, and our team will
-              follow up with a custom proposal. You can also email us at
+              Click "Get a Free Quote" or "Schedule Cleaning" on this page, share
+              your details, preferred schedule, and scope, and our team will
+              follow up with a custom proposal. You can also call us at
+              <a href="tel:9179830177">917-983-0177</a> or email
               <a href="mailto:info@spotlesssolutionsnyc.com"
                 >info@spotlesssolutionsnyc.com</a
               >
@@ -1747,19 +2116,29 @@
     <section id="contact">
       <div class="container">
         <h2>Ready to Get Started?</h2>
+        <p class="section-intro">
+          Ready for professional cleaning? Tell us what you need cleaned, where
+          you're located, and we'll provide a custom quote. Serving Manhattan,
+          Queens, Brooklyn, the Bronx, and New Jersey.
+        </p>
         <div class="contact-card">
-          <h3>Shine Without the Stress</h3>
-          <p>Questions? Reach out anytime. We're here to help.</p>		
-		    
-          <a href="mailto:info@spotlesssolutionsnyc.com" class="contact-email">info@spotlesssolutionsnyc.com</a>
-          <a href="tel:9179830177">Call us: (917) 983-0177</a>
+          <h3>What We Clean. Where We Clean. How to Reach Us.</h3>
+          <p>
+            Commercial and residential cleaning by trained professionals. Get in
+            touch today for a free quote.
+          </p>
+          <a href="tel:9179830177" class="contact-phone">917-983-0177</a>
+          <a href="mailto:info@spotlesssolutionsnyc.com" class="contact-email"
+            >info@spotlesssolutionsnyc.com</a
+          >
           <div class="contact-actions">
-            <button class="btn btn-white" onclick="openBookingModal()">
-              Book Now
-            </button>
             <button class="btn btn-white" onclick="openQuoteModal()">
-              Get Quote
+              Get a Free Quote
             </button>
+            <button class="btn btn-white" onclick="openBookingModal()">
+              Schedule Cleaning
+            </button>
+            <a href="tel:9179830177" class="btn btn-white">Call Today</a>
           </div>
         </div>
       </div>
@@ -1770,15 +2149,30 @@
       <div class="footer-container">
         <div class="footer-grid">
           <div class="footer-section">
-            <div class="footer-logo">✨ Spotless Solutions</div>
-            <p style="margin-top: 0.5rem; font-size: 0.9rem">
-              Shine without the stress.
+            <div class="footer-logo">
+              <img
+                src="./assets/spotlesssolutionslogoV2.jpg"
+                alt="Spotless Solutions"
+              />
+            </div>
+            <p style="margin-top: 0.75rem; font-size: 0.9rem">
+              Professional cleaning for your business &amp; your home.
+            </p>
+            <p
+              style="
+                margin-top: 0.5rem;
+                font-size: 0.85rem;
+                color: rgba(255, 255, 255, 0.7);
+              "
+            >
+              Woman-Owned Business
             </p>
           </div>
           <div class="footer-section">
             <h4>Quick Links</h4>
             <ul>
               <li><a href="#services">Services</a></li>
+              <li><a href="#about">About</a></li>
               <li><a href="#how-it-works">How It Works</a></li>
               <li><a href="#pricing">Pricing</a></li>
               <li><a href="#reviews">Reviews</a></li>
@@ -1797,9 +2191,13 @@
             <h4>Get in Touch</h4>
             <ul>
               <li>
+                <a href="tel:9179830177">917-983-0177</a>
+              </li>
+              <li>
                 <a href="mailto:info@spotlesssolutionsnyc.com">Email us</a>
               </li>
-              <li>NYC Service Area</li>
+              <li>Manhattan • Queens • Brooklyn</li>
+              <li>Bronx • New Jersey</li>
               <li
                 style="
                   margin-top: 1rem;
@@ -1807,7 +2205,8 @@
                   color: rgba(255, 255, 255, 0.6);
                 "
               >
-                ✓ Fully Insured<br />✓ Eco-Friendly<br />✓ 100% Guarantee
+                ✓ Woman-Owned Business<br />✓ Fully Insured<br />✓
+                Eco-Friendly<br />✓ 100% Guarantee
               </li>
             </ul>
           </div>
@@ -1861,21 +2260,35 @@
             <label for="quoteService">Service Needed *</label>
             <select id="quoteService" name="service" required>
               <option value="">Select a service...</option>
-              <option value="Office & Facility Cleaning">
-                Office & Facility Cleaning
-              </option>
-              <option value="Deep Cleaning & Disinfection">
-                Deep Cleaning & Disinfection
-              </option>
-              <option value="Recurring Commercial Contracts">
-                Recurring Commercial Contracts
-              </option>
-              <option value="Post-Construction Cleanup">
-                Post-Construction Cleanup
-              </option>
-              <option value="Move-In / Move-Out Cleaning">
-                Move-In / Move-Out Cleaning
-              </option>
+              <optgroup label="Commercial Cleaning">
+                <option value="Office Cleaning">Office Cleaning</option>
+                <option value="Commercial Kitchen Cleaning">
+                  Commercial Kitchen Cleaning
+                </option>
+                <option value="Bar & Lounge Cleaning">
+                  Bar &amp; Lounge Cleaning
+                </option>
+                <option value="Recurring Commercial Contracts">
+                  Recurring Commercial Contracts
+                </option>
+                <option value="Deep Cleaning & Disinfection">
+                  Deep Cleaning &amp; Disinfection
+                </option>
+                <option value="Post-Construction Cleanup">
+                  Post-Construction Cleanup
+                </option>
+              </optgroup>
+              <optgroup label="Residential Cleaning">
+                <option value="House Cleaning">House Cleaning</option>
+                <option value="Apartment Cleaning">Apartment Cleaning</option>
+                <option value="Deep Home Cleaning">Deep Home Cleaning</option>
+                <option value="Recurring Home Cleaning">
+                  Recurring Home Cleaning
+                </option>
+                <option value="Move-In / Move-Out Cleaning">
+                  Move-In / Move-Out Cleaning
+                </option>
+              </optgroup>
             </select>
           </div>
 
@@ -1928,7 +2341,7 @@
               type="tel"
               id="quotePhone"
               name="phone"
-              placeholder="(555) 123-4567"
+              placeholder="917-983-0177"
               required
             />
           </div>
@@ -1978,21 +2391,35 @@
             <label for="bookService">Service Needed *</label>
             <select id="bookService" name="book_service" required>
               <option value="">Select a service...</option>
-              <option value="Office & Facility Cleaning">
-                Office & Facility Cleaning
-              </option>
-              <option value="Deep Cleaning & Disinfection">
-                Deep Cleaning & Disinfection
-              </option>
-              <option value="Recurring Commercial Contracts">
-                Recurring Commercial Contracts
-              </option>
-              <option value="Post-Construction Cleanup">
-                Post-Construction Cleanup
-              </option>
-              <option value="Move-In / Move-Out Cleaning">
-                Move-In / Move-Out Cleaning
-              </option>
+              <optgroup label="Commercial Cleaning">
+                <option value="Office Cleaning">Office Cleaning</option>
+                <option value="Commercial Kitchen Cleaning">
+                  Commercial Kitchen Cleaning
+                </option>
+                <option value="Bar & Lounge Cleaning">
+                  Bar &amp; Lounge Cleaning
+                </option>
+                <option value="Recurring Commercial Contracts">
+                  Recurring Commercial Contracts
+                </option>
+                <option value="Deep Cleaning & Disinfection">
+                  Deep Cleaning &amp; Disinfection
+                </option>
+                <option value="Post-Construction Cleanup">
+                  Post-Construction Cleanup
+                </option>
+              </optgroup>
+              <optgroup label="Residential Cleaning">
+                <option value="House Cleaning">House Cleaning</option>
+                <option value="Apartment Cleaning">Apartment Cleaning</option>
+                <option value="Deep Home Cleaning">Deep Home Cleaning</option>
+                <option value="Recurring Home Cleaning">
+                  Recurring Home Cleaning
+                </option>
+                <option value="Move-In / Move-Out Cleaning">
+                  Move-In / Move-Out Cleaning
+                </option>
+              </optgroup>
             </select>
             <div class="error-message"></div>
           </div>
@@ -2050,7 +2477,7 @@
               type="tel"
               id="bookPhone"
               name="book_phone"
-              placeholder="(555) 123-4567"
+              placeholder="917-983-0177"
               required
             />
             <div class="error-message"></div>
@@ -2564,7 +2991,7 @@
 
           if (result.success) {
             status.innerHTML = "Thanks! We'll confirm your quote shortly.";
-            status.style.color = "#4caf50";
+            status.style.color = "#80CC28";
             quoteForm.reset();
 
             // Show success state
@@ -2617,7 +3044,7 @@
 
           if (result.success) {
             status.innerHTML = "Thanks! Your booking is confirmed.";
-            status.style.color = "#4caf50";
+            status.style.color = "#80CC28";
             bookingForm.reset();
 
             // Show success state
