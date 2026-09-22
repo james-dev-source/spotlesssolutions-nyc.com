@@ -19,7 +19,7 @@
     <!-- Open Graph -->
     <meta
       property="og:image"
-      content="https://spotlesssolutionsnyc.com/assets/spotlesssolutionslogoV2.jpg"
+      content="https://spotlesssolutionsnyc.com/assets/spotlesssolutionslogoV3.jpg"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -43,7 +43,7 @@
         "url": "https://spotlesssolutions.com",
         "email": "info@spotlesssolutionsnyc.com",
         "telephone": "+1-917-983-0177",
-        "image": "https://spotlesssolutionsnyc.com/assets/spotlesssolutionslogoV2.jpg",
+        "image": "https://spotlesssolutionsnyc.com/assets/spotlesssolutionslogoV3.jpg",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "New York",
@@ -223,7 +223,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 70px;
+        height: 76px;
       }
 
       .logo {
@@ -233,20 +233,25 @@
         font-size: 1.3rem;
         font-weight: 700;
         color: var(--accent-blue);
+        flex-shrink: 1;
+        min-width: 0;
       }
 
       .logo-mark {
-        height: 52px;
+        height: 54px;
+        max-width: 180px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
+        justify-content: flex-start;
+        flex-shrink: 1;
+        min-width: 0;
         cursor: pointer;
       }
 
       .logo-mark img {
         height: 100%;
         width: auto;
+        max-width: 100%;
         object-fit: contain;
       }
 
@@ -344,7 +349,7 @@
       .mobile-nav {
         display: none;
         position: fixed;
-        top: 70px;
+        top: 76px;
         left: 0;
         right: 0;
         background: white;
@@ -412,6 +417,7 @@
         margin: 0 auto;
         position: relative;
         z-index: 1;
+        text-align: center;
       }
 
       .hero h1 {
@@ -426,14 +432,30 @@
       .hero-subheader {
         font-size: 1.2rem;
         color: var(--text-light);
-        margin-bottom: 2rem;
-        max-width: 600px;
+        margin: 0 auto 1rem;
+        max-width: 720px;
+      }
+
+      .hero-call {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0 auto 2rem;
+        max-width: 720px;
+      }
+
+      .hero-call a {
+        color: var(--accent-blue);
+      }
+
+      .hero-call a:hover {
+        color: var(--accent-blue-dark);
       }
 
       .hero-buttons {
         display: flex;
         gap: 1rem;
         flex-wrap: wrap;
+        justify-content: center;
       }
 
       /* Trust Badge */
@@ -998,39 +1020,26 @@
 
       /* Promo Banner */
       .promo-banner {
-        background: linear-gradient(
-          135deg,
-          var(--accent-green) 0%,
-          var(--accent-blue) 100%
-        );
-        color: var(--white);
-        padding: 1.25rem 1.5rem;
+        background: rgba(28, 177, 253, 0.12);
+        border-top: 1px solid rgba(28, 177, 253, 0.2);
+        border-bottom: 1px solid rgba(28, 177, 253, 0.2);
+        padding: 0.75rem 1.5rem;
         text-align: center;
       }
 
-      .promo-banner .container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-      }
-
       .promo-banner p {
-        color: var(--white);
+        color: var(--text-dark);
         margin: 0;
         font-weight: 500;
-        font-size: 1rem;
+        font-size: 0.95rem;
       }
 
-      .promo-banner .promo-placeholder {
-        font-size: 0.85rem;
-        opacity: 0.9;
+      .promo-banner p strong {
+        color: var(--accent-blue);
       }
 
-      .promo-banner .btn {
-        padding: 0.625rem 1.25rem;
-        font-size: 0.9rem;
+      .promo-banner + .hero {
+        padding-top: 44px;
       }
 
       /* Woman-Owned Badge */
@@ -1052,6 +1061,36 @@
         content: "♀";
         color: var(--accent-blue);
         font-size: 1.1rem;
+      }
+
+      .hero-woman-owned {
+        margin: 2.5rem auto 0;
+        max-width: 720px;
+        padding: 1.5rem 1.75rem;
+        background: var(--bg-white);
+        border: 1px solid var(--border-light);
+        border-top: 4px solid var(--accent-blue);
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(28, 177, 253, 0.08);
+        text-align: center;
+      }
+
+      .hero-woman-owned h2 {
+        font-size: 1.35rem;
+        color: var(--text-dark);
+        margin-bottom: 0.75rem;
+        text-align: center;
+      }
+
+      .hero-woman-owned p {
+        color: var(--text-light);
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+        line-height: 1.65;
+      }
+
+      .hero-woman-owned .woman-owned-badge {
+        margin-top: 0;
       }
 
       /* Section Intro */
@@ -1084,11 +1123,17 @@
 
       /* About / Trust Section */
       .about-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
         margin-top: 2rem;
+      }
+
+      .about-content {
+        max-width: 900px;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
       }
 
       .about-content h3 {
@@ -1215,6 +1260,12 @@
         color: var(--accent-blue-light);
       }
 
+      .footer-areas {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.5;
+      }
+
       .footer-bottom {
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         padding-top: 2rem;
@@ -1334,7 +1385,7 @@
 
       @media (max-width: 480px) {
         .header-container {
-          height: 60px;
+          height: 64px;
           padding: 0 1rem;
         }
 
@@ -1344,11 +1395,15 @@
         }
 
         .logo-mark {
-          height: 40px;
+          height: 42px;
+          max-width: 140px;
+        }
+
+        .mobile-nav {
+          top: 64px;
         }
 
         .about-grid {
-          grid-template-columns: 1fr;
           gap: 2rem;
         }
 
@@ -1360,8 +1415,8 @@
           display: none;
         }
 
-        .promo-banner .container {
-          flex-direction: column;
+        .promo-banner + .hero {
+          padding-top: 36px;
         }
 
         h1 {
@@ -1406,27 +1461,25 @@
         <div class="logo" onclick="scrollToTop()" style="cursor: pointer">
           <div class="logo-mark">
             <img
-              src="./assets/spotlesssolutionslogoV2.jpg"
+              src="./assets/spotlesssolutionslogoV3.jpg"
               alt="Spotless Solutions"
             />
           </div>
         </div>
         <nav>
           <a href="#services">Services</a>
-          <a href="#about">About</a>
-          <a href="#areas">Service Areas</a>
           <a href="#how-it-works">How It Works</a>
+          <a href="#pricing">Pricing</a>
           <a href="#reviews">Reviews</a>
           <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
         </nav>
         <div class="header-ctas">
-          <a href="tel:9179830177" class="header-phone">917-983-0177</a>
-          <button class="btn btn-primary" onclick="openQuoteModal()">
-            Get a Free Quote
+          <button class="btn btn-primary" onclick="openBookingModal()">
+            Book Appointment
           </button>
-          <button class="btn btn-secondary" onclick="openBookingModal()">
-            Schedule Cleaning
+          <button class="btn btn-secondary" onclick="openQuoteModal()">
+            Get a Quote
           </button>
         </div>
         <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
@@ -1435,26 +1488,19 @@
     <!-- Mobile Navigation -->
     <nav class="mobile-nav" id="mobileNav">
       <a href="#services" onclick="closeMobileMenu()">Services</a>
-      <a href="#about" onclick="closeMobileMenu()">About</a>
-      <a href="#areas" onclick="closeMobileMenu()">Service Areas</a>
       <a href="#how-it-works" onclick="closeMobileMenu()">How It Works</a>
+      <a href="#pricing" onclick="closeMobileMenu()">Pricing</a>
       <a href="#reviews" onclick="closeMobileMenu()">Reviews</a>
       <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
-      <a href="tel:9179830177" onclick="closeMobileMenu()">Call 917-983-0177</a>
       <a href="#contact" onclick="closeMobileMenu()">Contact</a>
     </nav>
 
     <!-- Promotions Banner (update content for campaigns) -->
     <div class="promo-banner" id="promotions">
-      <div class="container">
-        <p>
-          <strong>Residential Cleaning Specials</strong> — Ask about our
-          house &amp; apartment cleaning promotions.
-        </p>
-        <button class="btn btn-white" onclick="openQuoteModal()">
-          Request a Quote
-        </button>
-      </div>
+      <p>
+        <strong>Residential Cleaning Specials</strong> — Ask about our
+        house &amp; apartment cleaning promotions.
+      </p>
     </div>
 
     <!-- Hero Section -->
@@ -1467,8 +1513,11 @@
         <p class="hero-subheader">
           Spotless Solutions delivers commercial and residential cleaning across
           Manhattan, Queens, Brooklyn, the Bronx, and New Jersey. From offices,
-          kitchens, bars, and lounges to houses and apartments — our trained
+          kitchens, bars, and lounges to commercial spaces, and houses and
+          apartments — our trained
           professionals use the right products for every surface, every time.
+        </p>
+        <p class="hero-call">
           <a href="tel:9179830177">Call 917-983-0177</a>
         </p>
         <div class="hero-buttons">
@@ -1484,7 +1533,17 @@
           Trained professionals • Professional-grade products • Reliable service
           • Attention to detail
         </div>
-        <div class="woman-owned-badge">Woman-Owned Business</div>
+        <div class="hero-woman-owned">
+          <h2>A Woman-Owned Business You Can Trust</h2>
+          <p>
+            Spotless Solutions is a Woman-Owned Business built on attention to
+            detail, reliable service, and a commitment to doing the job right.
+            Whether we're cleaning your office, kitchen, bar, lounge, house, or
+            apartment — we match the right team, experience, and products to your
+            space.
+          </p>
+          <div class="woman-owned-badge">Woman-Owned Business</div>
+        </div>
       </div>
     </section>
 
@@ -1752,15 +1811,12 @@
         </p>
         <div class="about-grid">
           <div class="about-content">
-            <h3>A Woman-Owned Business You Can Trust</h3>
+            <h3>Built on Trust &amp; Quality</h3>
             <p>
-              Spotless Solutions is a Woman-Owned Business built on attention to
-              detail, reliable service, and a commitment to doing the job
-              right. Whether we're cleaning your office, kitchen, bar, lounge,
-              house, or apartment — we match the right team, experience, and
-              products to your space.
+              From commercial offices and kitchens to houses and apartments, we
+              bring trained professionals, professional-grade products, and
+              reliable cleaning processes to every job.
             </p>
-            <div class="woman-owned-badge">Woman-Owned Business</div>
             <div class="about-highlights">
               <div class="about-highlight">
                 <span class="about-highlight-icon">✓</span>
@@ -1982,6 +2038,45 @@
               Property Manager, Downtown Business Plaza
             </div>
           </div>
+
+          <div class="testimonial">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="testimonial-text">
+              "They deep-cleaned our apartment before we moved in and it was
+              flawless. Every surface was handled with care, and the team was
+              professional from start to finish."
+            </div>
+            <div class="testimonial-author">Sarah M.</div>
+            <div class="testimonial-role">
+              Homeowner, Upper East Side Manhattan
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="testimonial-text">
+              "Our bar and lounge gets heavy foot traffic every night. Spotless
+              Solutions keeps the floors, restrooms, and bar areas consistently
+              clean — exactly what we need to stay ready for service."
+            </div>
+            <div class="testimonial-author">Marco V.</div>
+            <div class="testimonial-role">
+              Owner, Queens Lounge &amp; Bar
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="testimonial-text">
+              "We use them for bi-weekly house cleaning in New Jersey and the
+              results are always excellent. Reliable scheduling, great
+              communication, and a spotless home every visit."
+            </div>
+            <div class="testimonial-author">Jennifer K.</div>
+            <div class="testimonial-role">
+              Residential Client, Hoboken, NJ
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -2151,7 +2246,7 @@
           <div class="footer-section">
             <div class="footer-logo">
               <img
-                src="./assets/spotlesssolutionslogoV2.jpg"
+                src="./assets/spotlesssolutionslogoV3.jpg"
                 alt="Spotless Solutions"
               />
             </div>
@@ -2172,7 +2267,6 @@
             <h4>Quick Links</h4>
             <ul>
               <li><a href="#services">Services</a></li>
-              <li><a href="#about">About</a></li>
               <li><a href="#how-it-works">How It Works</a></li>
               <li><a href="#pricing">Pricing</a></li>
               <li><a href="#reviews">Reviews</a></li>
@@ -2196,8 +2290,10 @@
               <li>
                 <a href="mailto:info@spotlesssolutionsnyc.com">Email us</a>
               </li>
-              <li>Manhattan • Queens • Brooklyn</li>
-              <li>Bronx • New Jersey</li>
+              <li class="footer-areas">
+                Manhattan • Queens • Brooklyn<br />
+                Bronx • New Jersey
+              </li>
               <li
                 style="
                   margin-top: 1rem;
@@ -2939,7 +3035,7 @@
             e.preventDefault();
             const target = document.querySelector(href);
             if (target) {
-              const headerOffset = 70;
+              const headerOffset = 76;
               const elementPosition = target.offsetTop;
               const offsetPosition = elementPosition - headerOffset;
               window.scrollTo({
