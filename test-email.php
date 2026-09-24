@@ -1,13 +1,31 @@
 <?php
-$to = "jamesc2128@gmail.com";
-$subject = "TEST EMAIL FROM GODADDY";
-$message = "This is a test email to verify PHP mail() works";
-$headers = "From: test@spotlesssolutionsnyc.com\r\n";
+require 'phpmailer/Exception.php';
+//require 'phpmailer/DSNConfigurator.php';
+require 'phpmailer/PHPMailer.php';
+require 'phpmailer/SMTP.php';
 
-$result = mail($to, $subject, $message, $headers);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-if ($result) {
-    echo "SUCCESS: Email sent!!!!";
-} else {
-    echo "FAILED: Email did not send!!!";
+$mail = new PHPMailer(true);
+
+try {
+    $mail->isSMTP();
+    $mail->Host = 'smtp.office365.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'info@spotlesssolutionsnyc.com';
+    $mail->Password = 'InfoNYC1105!';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port = 587;
+    $mail->Timeout = 15;
+    
+    // Try to connect
+    $mail->smtpConnect();
+    
+    echo "✅ SMTP Connection Successful!";
+    
+} catch (Exception $e) {
+    echo "❌ Error: " . $e->getMessage();
+    echo "<br>Error Code: " . $mail->ErrorInfo;
 }
+?>

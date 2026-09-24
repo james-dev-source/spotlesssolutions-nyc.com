@@ -1,0 +1,14 @@
+.vscode/
+
+send-email-PROD-20260922.php
+test-email-PROD-20260922.php
+send-email-bak.php
+send-email-mailer.php
+test-email-m365.php
+test-email-simple.php
+
+index - BAK - 20260922.html
+index-PROD-20260922.html
+
+scripts/
+tools/

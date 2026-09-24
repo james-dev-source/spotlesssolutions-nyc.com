@@ -16,6 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $data = json_decode(file_get_contents('php://input'), true);
     
     $type = $data['type'] ?? 'Quote';
+    $subject = "";
 
     if ($type === "Quote") {
         $name = $data['name'] ?? '';
@@ -28,6 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $preferred_date = $data['preferred_date'] ?? '';
         $notes = '';
         $message = "New Quote Request\n";
+        $subject = "New Quote Request from $name";
     } else {
          // Booking form
         $name = $data['book_name'] ?? '';
@@ -40,8 +42,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $preferred_date = $data['book_date'] ?? '';
         $notes = $data['book_notes'] ?? '';        
         $message = "New Appointment Request\n";  
+        $subject = "New Appointment Request from $name";
     }
 
+    //Build rest of message
     $message .= "==========================================\n\n";
     $message .= "Name: $name\n";
     $message .= "Email: $email\n";
@@ -57,9 +61,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     $message .= "\n==========================================\n";
 
-    $to = "info@spotlesssolutionsnyc.com";
-    $subject = "New Quote Request from $name";
-
+    $to = "spotless.solutions1105@gmail.com";
+    
     $headers = "From: SpotlessSolutionsNYC@spotlesssolutionsnyc.com\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
