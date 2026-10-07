@@ -266,6 +266,32 @@
       }
 
       /* Gallery/Showcase */
+      .gallery-section {
+        padding-top: 48px;
+        padding-bottom: 36px;
+      }
+
+      section.gallery-section h2 {
+        margin-bottom: 0.75rem;
+      }
+
+      .gallery-section .section-intro {
+        margin-bottom: 1.25rem;
+      }
+
+      .gallery-section .gallery-grid {
+        margin-top: 0;
+      }
+
+      .gallery-section .gallery-ctas {
+        margin-top: 1.75rem;
+        margin-bottom: 0;
+      }
+
+      .gallery-section + .hero {
+        padding-top: 44px;
+      }
+
       .gallery-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -423,6 +449,8 @@
       .hero h1 {
         color: var(--text-dark);
         margin-bottom: 0.5rem;
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+        line-height: 1.2;
       }
 
       .hero .highlight {
@@ -1345,13 +1373,30 @@
           padding: 40px 1.5rem;
         }
 
+        .gallery-section {
+          padding-top: 36px;
+          padding-bottom: 28px;
+        }
+
         section h2 {
           margin-bottom: 1.5rem;
           font-size: 1.75rem;
         }
 
+        section.gallery-section h2 {
+          margin-bottom: 0.5rem;
+        }
+
         h1 {
           font-size: 1.75rem;
+        }
+
+        .hero h1 {
+          font-size: 1.75rem;
+        }
+
+        section.gallery-section + .hero {
+          padding-top: 36px;
         }
 
         .hero {
@@ -1424,6 +1469,10 @@
 
         h1 {
           font-size: 1.5rem;
+        }
+
+        .hero h1 {
+          font-size: 1.3rem;
         }
 
         h2 {
@@ -1506,6 +1555,47 @@
       </p>
     </div>
 
+    <!-- Gallery Section -->
+    <section class="alt-bg gallery-section">
+      <div class="container">
+        <h2>See the Spotless Difference</h2>
+        <p class="section-intro">
+          Professional cleaning for offices, commercial kitchens, bars, lounges,
+          homes, and apartments — delivered with attention to every detail.
+        </p>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="./assets/office1.jpg" alt="Office Spaces" />
+            <div class="gallery-item-label">Office Spaces</div>
+          </div>
+          <div class="gallery-item">
+            <img src="./assets/kitch2.jpeg" alt="Pristine kitchen" />
+            <div class="gallery-item-label">Commercial Kitchens</div>
+          </div>
+          <div class="gallery-item">
+            <img src="./assets/bar.jpg" alt="Clean bar and lounge areas" />
+            <div class="gallery-item-label">Bar & Lounge Spaces</div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./assets/residential.jpg"
+              alt="Clean residential home interior"
+            />
+            <div class="gallery-item-label">Residential Cleaning</div>
+          </div>
+        </div>
+        <div class="hero-buttons gallery-ctas">
+          <button class="btn btn-primary btn-lg" onclick="openQuoteModal()">
+            Get a Free Quote
+          </button>
+          <button class="btn btn-green" onclick="openBookingModal()">
+            Schedule Cleaning
+          </button>
+          <a href="tel:9179830177" class="btn btn-secondary">Call Today</a>
+        </div>
+      </div>
+    </section>
+
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
@@ -1523,15 +1613,6 @@
         <p class="hero-call">
           <a href="tel:9179830177">Call 917-983-0177</a>
         </p>
-        <div class="hero-buttons">
-          <button class="btn btn-primary btn-lg" onclick="openQuoteModal()">
-            Get a Free Quote
-          </button>
-          <button class="btn btn-green" onclick="openBookingModal()">
-            Schedule Cleaning
-          </button>
-          <a href="tel:9179830177" class="btn btn-secondary">Call Today</a>
-        </div>
         <div class="trust-badge">
           Trained professionals • Professional-grade products • Reliable service
           • Attention to detail
@@ -1546,31 +1627,6 @@
             space.
           </p>
           <div class="woman-owned-badge">Woman-Owned Business</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="alt-bg">
-      <div class="container">
-        <h2>See the Spotless Difference</h2>
-        <p class="section-intro">
-          Professional cleaning for offices, commercial kitchens, bars, lounges,
-          and more — delivered with attention to every detail.
-        </p>
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="./assets/office1.jpg" alt="Office Spaces" />
-            <div class="gallery-item-label">Office Spaces</div>
-          </div>
-          <div class="gallery-item">
-            <img src="./assets/kitch2.jpeg" alt="Pristine kitchen" />
-            <div class="gallery-item-label">Commercial Kitchens</div>
-          </div>
-          <div class="gallery-item">
-            <img src="./assets/bar.jpg" alt="Clean bar and lounge areas" />
-            <div class="gallery-item-label">Bar & Lounge Spaces</div>
-          </div>
         </div>
       </div>
     </section>
